@@ -7,10 +7,10 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SR Impact | Empowering Leaders for Lasting Change",
+  title: "Latte Lab | Brewing the future one cup, one idea at a time.",
   description:
-    "SR Impact provides direct, discreet support to leaders and their teams to deliver effective, lasting change.",
-    generator: 'v0.dev'
+    "We bring engineers, scientists, and coffee lovers together to drive innovation, community, and coffee science.",
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
