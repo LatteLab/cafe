@@ -6,7 +6,7 @@ import { HeroSection } from '@/components/hero-section'
 
 export default function ServicesPage() {
     return (
-        <main className="min-h-screen pt-16">
+        <main className="min-h-screen pt-14">
             <HeroSection title="Our Services" description="We provide strategic guidance and support to help leaders and organizations create lasting positive change." />
 
             {/* Services Overview Section */}

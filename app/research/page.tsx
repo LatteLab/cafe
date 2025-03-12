@@ -7,7 +7,7 @@ import { HeroSection } from '@/components/hero-section'
 
 export default function ResearchPage() {
     return (
-        <main className="min-h-screen pt-16">
+        <main className="min-h-screen pt-14">
             <HeroSection title="Research & Insights" description="Exploring the future of leadership, organizational development, and sustainable business practices through rigorous research and practical insights." />
 
             {/* Featured Research Section */}

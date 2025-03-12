@@ -103,7 +103,7 @@ function PressRelease({ date, category, title, description, link, image }: Press
 
 export default function PressPage() {
     return (
-        <main className="min-h-screen pt-16">
+        <main className="min-h-screen pt-14">
             <HeroSection title="News & Media" description="Stay updated with the latest news, articles, and media coverage featuring Latte Lab." />
 
             {/* Press Releases Section */}

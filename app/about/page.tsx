@@ -133,7 +133,7 @@ function Value({ title, description, icon }: ValueProps) {
 
 export default function AboutPage() {
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen mt-14">
             <HeroSection
                 title="We fuel innovation, community, and coffee-driven discovery."
                 description="Latte Lab is a hub where science, technology, and coffee intersect. We foster innovation, build community, and conduct cutting-edge research to push the boundaries of coffee and its impact on the world."

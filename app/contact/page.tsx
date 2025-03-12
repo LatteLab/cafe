@@ -67,7 +67,7 @@ function FAQ({ question, answer }: FAQProps) {
 
 export default function ContactPage() {
     return (
-        <main className="min-h-screen pt-16">
+        <main className="min-h-screen pt-14">
             {/* Hero Section */}
             <HeroSection title="Get in Touch" description="We're here to answer your questions and discuss how Latte Lab can help your organization achieve lasting change." />
 

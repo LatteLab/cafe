@@ -4,9 +4,11 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { usePathname } from "next/navigation"
+import { Menu, X } from "lucide-react"
 
 export function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
     const pathname = usePathname()
     const isHomePage = pathname === "/"
 
@@ -34,23 +36,6 @@ export function Header() {
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <Link href="/" className="flex items-center gap-2">
-                    {/* <div className="w-8 h-8">
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            className={`w-full h-full ${isScrolled || !isHomePage ? "text-brand-dark" : "text-white"}`}
-                        >
-                            <path
-                                d="M12 2L2 7L12 12L22 7L12 2Z"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                fill="currentColor"
-                            />
-                            <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" fill="currentColor" />
-                            <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" fill="currentColor" />
-                        </svg>
-                    </div> */}
                     <span
                         className={`text-xl font-medium ${isScrolled || !isHomePage ? "text-brand-dark" : "text-white"}`}
                     >
@@ -66,24 +51,10 @@ export function Header() {
                     >
                         About us
                     </Link>
-                    {/* <Link
-                        href="/services"
-                        className={`hover:opacity-80 transition-colors ${isScrolled || !isHomePage ? "text-brand-dark" : "text-white"
-                            } ${pathname.startsWith("/services") ? "font-medium" : ""}`}
-                    >
-                        Services
-                    </Link>
-                    <Link
-                        href="/research"
-                        className={`hover:opacity-80 transition-colors ${isScrolled || !isHomePage ? "text-brand-dark" : "text-white"
-                            } ${pathname === "/clients" ? "font-medium" : ""}`}
-                    >
-                        Research
-                    </Link> */}
                     <Link
                         href="/news"
                         className={`hover:opacity-80 transition-colors ${isScrolled || !isHomePage ? "text-brand-dark" : "text-white"
-                            } ${pathname === "/startups" ? "font-medium" : ""}`}
+                            } ${pathname === "/news" ? "font-medium" : ""}`}
                     >
                         News
                     </Link>
@@ -101,27 +72,41 @@ export function Header() {
                     </Link>
                 </nav>
 
-                <Button
-                    variant="ghost"
+                <button
                     className={`md:hidden ${isScrolled || !isHomePage ? "text-brand-dark" : "text-white"}`}
+                    onClick={() => setIsOpen(!isOpen)}
                 >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    >
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </Button>
+                    {isOpen ? <X size={24} /> : <Menu size={24} />}
+                </button>
             </div>
+
+            {isOpen && (
+                <div className="md:hidden bg-white shadow-md absolute top-full left-0 right-0 py-4">
+                    <nav className="flex flex-col items-center space-y-4">
+                        <Link
+                            href="/about"
+                            className="text-brand-dark hover:text-brand-dark/70 transition-colors"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            About us
+                        </Link>
+                        <Link
+                            href="/news"
+                            className="text-brand-dark hover:text-brand-dark/70 transition-colors"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            News
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className="text-brand-dark hover:text-brand-dark/70 transition-colors"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Contact us
+                        </Link>
+                    </nav>
+                </div>
+            )}
         </header>
     )
 }
