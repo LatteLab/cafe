@@ -4,6 +4,11 @@ import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/fade-in"
 import { AnimatedNumber } from "@/components/animated-number"
 import { Footer } from '@/components/footer'
+import HeroImage from '../public/coffee-science.jpeg'
+import MissionImage from '../public/mission.jpeg'
+import ResarchImage from '../public/research.jpeg'
+import CafeImage from '../public/cafe.jpeg'
+import ConsultingImage from '../public/consulting.jpeg'
 
 export default function Home() {
   return (
@@ -12,7 +17,7 @@ export default function Home() {
       <section className="relative h-screen">
         <div className="absolute inset-0 z-0">
           <Image
-            src="lattelab/coffee-science.jpeg"
+            src={HeroImage}
             alt="Background image of a professional"
             fill
             className="object-cover brightness-50"
@@ -82,7 +87,7 @@ export default function Home() {
           <div className="hidden md:block bg-brand-primary">
             <div className="aspect-square h-full w-full relative">
               <Image
-                src="lattelab/mission.jpeg"
+                src={MissionImage}
                 alt="Mission image"
                 layout="fill"
                 className="object-cover"
@@ -153,7 +158,7 @@ export default function Home() {
               <div>
                 <div className="aspect-square relative mb-6 overflow-hidden rounded-sm">
                   <Image
-                    src="lattelab/research.jpeg"
+                    src={ResarchImage}
                     alt="Professional in a modern office setting"
                     layout="fill"
                     className="object-cover"
@@ -169,7 +174,7 @@ export default function Home() {
               <div>
                 <div className="aspect-square relative mb-6 overflow-hidden rounded-sm">
                   <Image
-                    src="lattelab/cafe.jpeg"
+                    src={CafeImage}
                     alt="Team of professionals"
                     layout="fill"
                     className="object-cover"
@@ -185,7 +190,7 @@ export default function Home() {
               <div>
                 <div className="aspect-square relative mb-6 overflow-hidden rounded-sm">
                   <Image
-                    src="lattelab/consulting.jpeg"
+                    src={ConsultingImage}
                     alt="Leadership coaching session"
                     layout="fill"
                     className="object-cover"

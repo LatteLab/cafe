@@ -6,6 +6,7 @@ import { Footer } from '@/components/footer'
 import { HeroSection } from '@/components/hero-section'
 import { Lightbulb, Users, Award } from 'lucide-react'
 import { JSX } from 'react'
+import LogoImage from '../public/lattelab/logo.JPEG'
 
 const teamMembers = [
     {
@@ -162,7 +163,7 @@ export default function AboutPage() {
                         <FadeIn direction="up" duration={0.6} delay={0.2}>
                             <div className="relative h-[400px] md:h-[500px] rounded-sm overflow-hidden">
                                 <Image
-                                    src="lattelab/logo.JPEG"
+                                    src={LogoImage}
                                     alt="Team collaboration"
                                     fill
                                     className="object-cover"
