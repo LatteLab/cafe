@@ -148,17 +148,13 @@ export default function AboutPage() {
                                 <h2 className="text-3xl md:text-4xl font-medium mb-6 text-brand-dark">Our Story</h2>
                                 <div className="space-y-4 text-brand-dark/80">
                                     <p>
-                                        Founded in 2010, SR Impact began with a simple mission: to provide leaders with the support they need
-                                        to drive meaningful change in their organizations and communities.
+                                        Founded in 2024, Latte Lab began with a simple mission: to bring together scientists, engineers, and coffee enthusiasts to push the boundaries of coffee science and technology.
                                     </p>
                                     <p>
-                                        What started as a small team of passionate consultants has grown into a global network of over 450
-                                        experts across 14 offices worldwide. Despite our growth, we've maintained our commitment to
-                                        personalized service and measurable results.
+                                        What started as a small team of MIT-trained baristas has grown into a pioneering community dedicated to innovation, education, and industry impact. Despite our growth, we remain committed to scientific rigor, collaboration, and excellence in every cup.
                                     </p>
                                     <p>
-                                        Today, we work with Fortune 500 companies, high-growth startups, and nonprofit organizations to
-                                        tackle their most pressing challenges and capitalize on their biggest opportunities.
+                                        Today, we are driving research, consulting on coffee technology, and fostering a thriving coffee culture—with the goal of disrupting the $200B global coffee market.
                                     </p>
                                 </div>
                             </div>

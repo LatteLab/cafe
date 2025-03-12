@@ -7,8 +7,8 @@ import { Header } from "@/components/header"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SR Impact | Empowering Leaders for Lasting Change",
-  description: "SR Impact provides direct, discreet support to leaders and their teams to deliver effective, lasting change.",
+  title: "Latte Lab | Brewing the future one cup, one idea at a time.",
+  description: "We are engineering coffee community at MIT.",
 };
 
 export default function RootLayout({
