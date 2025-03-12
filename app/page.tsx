@@ -12,7 +12,7 @@ export default function Home() {
       <section className="relative h-screen">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/coffee-science.jpeg"
+            src="lattelab/coffee-science.jpeg"
             alt="Background image of a professional"
             fill
             className="object-cover brightness-50"
@@ -82,7 +82,7 @@ export default function Home() {
           <div className="hidden md:block bg-brand-primary">
             <div className="aspect-square h-full w-full relative">
               <Image
-                src="/mission.jpeg"
+                src="lattelab/mission.jpeg"
                 alt="Mission image"
                 layout="fill"
                 className="object-cover"
@@ -153,7 +153,7 @@ export default function Home() {
               <div>
                 <div className="aspect-square relative mb-6 overflow-hidden rounded-sm">
                   <Image
-                    src="/research.jpeg"
+                    src="lattelab/research.jpeg"
                     alt="Professional in a modern office setting"
                     layout="fill"
                     className="object-cover"
@@ -169,7 +169,7 @@ export default function Home() {
               <div>
                 <div className="aspect-square relative mb-6 overflow-hidden rounded-sm">
                   <Image
-                    src="/cafe.jpeg"
+                    src="lattelab/cafe.jpeg"
                     alt="Team of professionals"
                     layout="fill"
                     className="object-cover"
@@ -185,7 +185,7 @@ export default function Home() {
               <div>
                 <div className="aspect-square relative mb-6 overflow-hidden rounded-sm">
                   <Image
-                    src="/consulting.jpeg"
+                    src="lattelab/consulting.jpeg"
                     alt="Leadership coaching session"
                     layout="fill"
                     className="object-cover"

@@ -166,7 +166,7 @@ export default function AboutPage() {
                         <FadeIn direction="up" duration={0.6} delay={0.2}>
                             <div className="relative h-[400px] md:h-[500px] rounded-sm overflow-hidden">
                                 <Image
-                                    src="/logo.JPEG"
+                                    src="lattelab/logo.JPEG"
                                     alt="Team collaboration"
                                     fill
                                     className="object-cover"

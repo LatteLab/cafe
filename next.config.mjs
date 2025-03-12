@@ -8,19 +8,21 @@ try {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: true
   },
   images: {
-    unoptimized: true,
+    unoptimized: true
   },
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
+    parallelServerCompiles: true
   },
+  // output: 'export',
+  basePath: '/lattelab'
 }
 
 mergeConfig(nextConfig, userConfig)
@@ -37,7 +39,7 @@ function mergeConfig(nextConfig, userConfig) {
     ) {
       nextConfig[key] = {
         ...nextConfig[key],
-        ...userConfig[key],
+        ...userConfig[key]
       }
     } else {
       nextConfig[key] = userConfig[key]

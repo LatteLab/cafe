@@ -26,7 +26,7 @@ export default function ResearchPage() {
                         <FadeIn direction="up" duration={0.6} delay={0.1}>
                             <div className="relative h-[400px] md:h-[500px] rounded-sm overflow-hidden">
                                 <Image
-                                    src="/placeholder.svg?height=500&width=600"
+                                    src="lattelab/placeholder.svg?height=500&width=600"
                                     alt="Leadership research visualization"
                                     fill
                                     className="object-cover"
@@ -154,7 +154,7 @@ export default function ResearchPage() {
                             <div className="bg-white rounded-sm overflow-hidden shadow-sm group hover:shadow-md transition-shadow duration-300">
                                 <div className="relative h-48 overflow-hidden">
                                     <Image
-                                        src="/placeholder.svg?height=300&width=500"
+                                        src="lattelab/placeholder.svg?height=300&width=500"
                                         alt="Future of Work research"
                                         fill
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -204,7 +204,7 @@ export default function ResearchPage() {
                             <div className="bg-white rounded-sm overflow-hidden shadow-sm group hover:shadow-md transition-shadow duration-300">
                                 <div className="relative h-48 overflow-hidden">
                                     <Image
-                                        src="/placeholder.svg?height=300&width=500"
+                                        src="lattelab/placeholder.svg?height=300&width=500"
                                         alt="Sustainable Business Practices"
                                         fill
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -254,7 +254,7 @@ export default function ResearchPage() {
                             <div className="bg-white rounded-sm overflow-hidden shadow-sm group hover:shadow-md transition-shadow duration-300">
                                 <div className="relative h-48 overflow-hidden">
                                     <Image
-                                        src="/placeholder.svg?height=300&width=500"
+                                        src="lattelab/placeholder.svg?height=300&width=500"
                                         alt="Organizational Culture"
                                         fill
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -304,7 +304,7 @@ export default function ResearchPage() {
                             <div className="bg-white rounded-sm overflow-hidden shadow-sm group hover:shadow-md transition-shadow duration-300">
                                 <div className="relative h-48 overflow-hidden">
                                     <Image
-                                        src="/placeholder.svg?height=300&width=500"
+                                        src="lattelab/placeholder.svg?height=300&width=500"
                                         alt="Innovation Research"
                                         fill
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -354,7 +354,7 @@ export default function ResearchPage() {
                             <div className="bg-white rounded-sm overflow-hidden shadow-sm group hover:shadow-md transition-shadow duration-300">
                                 <div className="relative h-48 overflow-hidden">
                                     <Image
-                                        src="/placeholder.svg?height=300&width=500"
+                                        src="lattelab/placeholder.svg?height=300&width=500"
                                         alt="Digital Transformation"
                                         fill
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -404,7 +404,7 @@ export default function ResearchPage() {
                             <div className="bg-white rounded-sm overflow-hidden shadow-sm group hover:shadow-md transition-shadow duration-300">
                                 <div className="relative h-48 overflow-hidden">
                                     <Image
-                                        src="/placeholder.svg?height=300&width=500"
+                                        src="lattelab/placeholder.svg?height=300&width=500"
                                         alt="Sustainable Supply Chains"
                                         fill
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -494,7 +494,7 @@ export default function ResearchPage() {
                         <FadeIn direction="up" duration={0.6} delay={0.2}>
                             <div className="relative h-[400px] md:h-[500px] rounded-sm overflow-hidden">
                                 <Image
-                                    src="/placeholder.svg?height=500&width=600"
+                                    src="lattelab/placeholder.svg?height=500&width=600"
                                     alt="Research methodology visualization"
                                     fill
                                     className="object-cover"

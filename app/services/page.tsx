@@ -28,7 +28,7 @@ export default function ServicesPage() {
                             <div className="group">
                                 <div className="aspect-square relative mb-6 overflow-hidden rounded-sm">
                                     <Image
-                                        src="/placeholder.svg?height=600&width=600"
+                                        src="/lattelab/placeholder.svg?height=600&width=600"
                                         alt="Leadership Development"
                                         width={600}
                                         height={600}
@@ -54,7 +54,7 @@ export default function ServicesPage() {
                             <div className="group">
                                 <div className="aspect-square relative mb-6 overflow-hidden rounded-sm">
                                     <Image
-                                        src="/placeholder.svg?height=600&width=600"
+                                        src="/lattelab/placeholder.svg?height=600&width=600"
                                         alt="Organizational Design"
                                         width={600}
                                         height={600}
@@ -80,7 +80,7 @@ export default function ServicesPage() {
                             <div className="group">
                                 <div className="aspect-square relative mb-6 overflow-hidden rounded-sm">
                                     <Image
-                                        src="/placeholder.svg?height=600&width=600"
+                                        src="/lattelab/placeholder.svg?height=600&width=600"
                                         alt="Culture Transformation"
                                         width={600}
                                         height={600}
@@ -220,7 +220,7 @@ export default function ServicesPage() {
                         <FadeIn direction="up" duration={0.6} delay={0.2}>
                             <div className="relative h-[500px] rounded-sm overflow-hidden">
                                 <Image
-                                    src="/placeholder.svg?height=500&width=600"
+                                    src="/lattelab/placeholder.svg?height=500&width=600"
                                     alt="Leadership Development"
                                     fill
                                     className="object-cover"
@@ -238,7 +238,7 @@ export default function ServicesPage() {
                         <FadeIn direction="up" duration={0.6} delay={0.2} className="order-2 md:order-1">
                             <div className="relative h-[500px] rounded-sm overflow-hidden">
                                 <Image
-                                    src="/placeholder.svg?height=500&width=600"
+                                    src="/lattelab/placeholder.svg?height=500&width=600"
                                     alt="Organizational Design"
                                     fill
                                     className="object-cover"
@@ -474,7 +474,7 @@ export default function ServicesPage() {
                         <FadeIn direction="up" duration={0.6} delay={0.2}>
                             <div className="relative h-[500px] rounded-sm overflow-hidden">
                                 <Image
-                                    src="/placeholder.svg?height=500&width=600"
+                                    src="/lattelab/placeholder.svg?height=500&width=600"
                                     alt="Culture Transformation"
                                     fill
                                     className="object-cover"
@@ -504,7 +504,7 @@ export default function ServicesPage() {
                                 <div className="flex items-center gap-4 mb-6">
                                     <div className="w-16 h-16 relative rounded-full overflow-hidden">
                                         <Image
-                                            src="/placeholder.svg?height=64&width=64"
+                                            src="/lattelab/placeholder.svg?height=64&width=64"
                                             alt="CEO portrait"
                                             width={64}
                                             height={64}
@@ -548,7 +548,7 @@ export default function ServicesPage() {
                                 <div className="flex items-center gap-4 mb-6">
                                     <div className="w-16 h-16 relative rounded-full overflow-hidden">
                                         <Image
-                                            src="/placeholder.svg?height=64&width=64"
+                                            src="/lattelab/placeholder.svg?height=64&width=64"
                                             alt="COO portrait"
                                             width={64}
                                             height={64}
@@ -592,7 +592,7 @@ export default function ServicesPage() {
                                 <div className="flex items-center gap-4 mb-6">
                                     <div className="w-16 h-16 relative rounded-full overflow-hidden">
                                         <Image
-                                            src="/placeholder.svg?height=64&width=64"
+                                            src="/lattelab/placeholder.svg?height=64&width=64"
                                             alt="CHRO portrait"
                                             width={64}
                                             height={64}
