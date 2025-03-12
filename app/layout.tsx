@@ -1,34 +1,34 @@
-import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter } from 'next/font/google'
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Header } from "@/components/header"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Latte Lab | Brewing the future one cup, one idea at a time.",
-  description:
-    "We bring engineers, scientists, and coffee lovers together to drive innovation, community, and coffee science.",
-  generator: 'v0.dev'
-}
+  title: "SR Impact | Empowering Leaders for Lasting Change",
+  description: "SR Impact provides direct, discreet support to leaders and their teams to deliver effective, lasting change.",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
           {children}
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
-
-
-
-import './globals.css'

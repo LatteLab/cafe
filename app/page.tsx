@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/fade-in"
 import { AnimatedNumber } from "@/components/animated-number"
+import { Footer } from '@/components/footer'
 
 export default function Home() {
   return (
@@ -21,57 +22,6 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 h-full flex flex-col">
-          <header className="bg-black/30 backdrop-blur-sm">
-            <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-              <Link href="/" className="flex items-center gap-2 text-white">
-                {/* <div className="w-8 h-8">
-                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="white" strokeWidth="2" fill="white" />
-                    <path d="M2 17L12 22L22 17" stroke="white" strokeWidth="2" fill="white" />
-                    <path d="M2 12L12 17L22 12" stroke="white" strokeWidth="2" fill="white" />
-                  </svg>
-                </div> */}
-                <span className="text-xl font-medium">Latte Lab</span>
-              </Link>
-
-              <nav className="hidden md:flex items-center gap-8 text-white">
-                <Link href="/about" className="hover:text-gray-300 transition-colors">
-                  About us
-                </Link>
-                <Link href="/services" className="hover:text-gray-300 transition-colors">
-                  Services
-                </Link>
-                <Link href="/clients" className="hover:text-gray-300 transition-colors">
-                  Clients
-                </Link>
-                <Link href="/startups" className="hover:text-gray-300 transition-colors">
-                  For Startups
-                </Link>
-                <Button variant="outline" className="bg-brand-primary text-brand-dark hover:bg-opacity-90 border-none">
-                  Contact us
-                </Button>
-              </nav>
-
-              <Button variant="ghost" className="md:hidden text-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <line x1="3" y1="12" x2="21" y2="12"></line>
-                  <line x1="3" y1="6" x2="21" y2="6"></line>
-                  <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-              </Button>
-            </div>
-          </header>
-
           <div className="flex-1 flex flex-col justify-center px-4 md:px-12 lg:px-20">
             <div className="max-w-3xl">
               <FadeIn direction="up" duration={0.8} delay={0.2}>
@@ -93,12 +43,14 @@ export default function Home() {
 
                 <FadeIn direction="up" duration={0.8} delay={0.6}>
                   <div className="mt-8 flex flex-wrap gap-4">
-                    <Button className="bg-brand-primary text-brand-dark hover:bg-opacity-90 border-none">
-                      All services
-                    </Button>
-                    <Button variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
-                      About us
-                    </Button>
+                    <Link href="/contact" className="bg-brand-primary text-brand-dark hover:bg-opacity-90 border-none px-4 py-2 rounded-md inline-block text-center">
+                      Contact us
+                    </Link>
+                    <Link href="/about">
+                      <Button variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
+                        About us
+                      </Button>
+                    </Link>
                   </div>
                 </FadeIn>
               </div>
@@ -246,18 +198,21 @@ export default function Home() {
             </FadeIn>
           </div>
 
-          {/* <FadeIn direction="up" duration={0.6} delay={0.4}>
+          <FadeIn direction="up" duration={0.6} delay={0.4}>
             <div className="mt-8">
-              <Button
-                variant="outline"
-                className="bg-brand-primary text-brand-dark border-brand-primary hover:bg-brand-primary/80"
-              >
-                Read more
-              </Button>
+              <Link href="/services">
+                <Button
+                  variant="outline"
+                  className="bg-brand-primary text-brand-dark border-brand-primary hover:bg-brand-primary/80"
+                >
+                  Read more
+                </Button>
+              </Link>
             </div>
-          </FadeIn> */}
+          </FadeIn>
         </div>
       </section>
+      <Footer />
     </main>
   )
 }
