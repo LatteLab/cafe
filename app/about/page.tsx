@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/fade-in"
 import { Footer } from '@/components/footer'
 import { HeroSection } from '@/components/hero-section'
+import { Lightbulb, Users, Award } from 'lucide-react'
+import { JSX } from 'react'
 
 const teamMembers = [
     {
@@ -60,73 +62,17 @@ const values = [
     {
         title: "Innovation",
         description: "We explore coffee beyond its taste, using science and engineering to uncover new possibilities.",
-        icon: (
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-brand-dark"
-            >
-                <path d="M12 2v4"></path>
-                <path d="M12 18v4"></path>
-                <path d="m4.93 4.93 2.83 2.83"></path>
-                <path d="m16.24 16.24 2.83 2.83"></path>
-                <path d="M2 12h4"></path>
-                <path d="M18 12h4"></path>
-                <path d="m4.93 19.07 2.83-2.83"></path>
-                <path d="m16.24 7.76 2.83-2.83"></path>
-            </svg>
-        )
+        icon: <Lightbulb className="text-brand-dark" size={24} />
     },
     {
         title: "Community",
         description: "Great ideas start with great conversations, and we bring together people who are passionate about both coffee and progress.",
-        icon: (
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-brand-dark"
-            >
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
-        )
+        icon: <Users className="text-brand-dark" size={24} />
     },
     {
         title: "Excellence",
         description: "Whether in research or brewing, we approach everything with precision, curiosity, and a commitment to quality.",
-        icon: (
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-brand-dark"
-            >
-                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-            </svg>
-        )
+        icon: <Award className="text-brand-dark" size={24} />
     }
 ];
 
