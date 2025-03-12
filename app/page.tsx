@@ -141,7 +141,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <FadeIn direction="up" duration={0.6}>
             <div className="mb-12">
-              <h2 className="text-4xl md:text-5xl font-medium mb-4 text-brand-dark">What we do</h2>
+              <h2 className="text-2xl md:text-3xl font-medium mb-4 text-brand-dark">What we do</h2>
               <p className="text-lg text-brand-dark/70 max-w-xl">
                 We use caffeine as a catalyst for innovation, community, and impact.
               </p>
@@ -159,7 +159,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="text-2xl font-medium mb-2 text-brand-dark">
+                <h3 className="text-xl font-medium mb-2 text-brand-dark">
                   Coffee Science Research
                 </h3>
               </div>
@@ -175,7 +175,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="text-2xl font-medium mb-2 text-brand-dark">
+                <h3 className="text-xl font-medium mb-2 text-brand-dark">
                   Specialty Coffee Cart
                 </h3>
               </div>
@@ -191,7 +191,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="text-2xl font-medium mb-2 text-brand-dark">
+                <h3 className="text-xl font-medium mb-2 text-brand-dark">
                   Coffee Technology Consulting
                 </h3>
               </div>
