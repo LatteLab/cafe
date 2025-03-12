@@ -6,7 +6,7 @@ import { Footer } from '@/components/footer'
 import { HeroSection } from '@/components/hero-section'
 import { Lightbulb, Users, Award } from 'lucide-react'
 import { JSX } from 'react'
-import LogoImage from '../public/lattelab/logo.JPEG'
+import LogoImage from '../../public/logo.png'
 
 const teamMembers = [
     {
