@@ -203,7 +203,7 @@ export default function Home() {
             </FadeIn>
           </div>
 
-          <FadeIn direction="up" duration={0.6} delay={0.4}>
+          {/* <FadeIn direction="up" duration={0.6} delay={0.4}>
             <div className="mt-8">
               <Link href="/services">
                 <Button
@@ -214,7 +214,7 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-          </FadeIn>
+          </FadeIn> */}
         </div>
       </section>
       <Footer />
