@@ -38,6 +38,15 @@ const pressReleases = [
         link: "https://news.mit.edu/2025/coffee-fix-mit-students-decode-science-behind-perfect-cup-0107",
         image: "https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202412/CoffeeClass1.jpg?itok=wWcwMN1z"
     },
+    {
+        date: "November 7, 2024",
+        category: "MIT Office of the Chancellor",
+        title: "Latte Lab Awarded MIT Chancellor's Innovation Fund",
+        description: "MindHandHeart and the Office of the Chancellor have awarded the Latte Lab with a grant to support MIT Values Statement “…quirkiness, nerdiness, creative irreverence, and play.”",
+        link: "https://mindhandheart.mit.edu/innovation-fund/grant-recipients",
+        image: "https://mindhandheart.mit.edu/sites/default/files/styles/title_image/public/2024-09/MIT%20Doodles%20Illustrated%20IF%20%20%28Presentation%29.png?itok=9Y9fBnJ1"
+    },
+
 ];
 
 interface PressReleaseProps {
