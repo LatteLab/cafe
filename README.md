@@ -59,16 +59,16 @@ The build output will be located in the `out` directory.
 
 ### Deployment
 
-1. Delete the existing files in the Athena locker:
+1. (Optional) Delete the existing files in the Athena locker:
    ```bash
    ssh [MIT_KERB]@athena.dialup.mit.edu
-   rm -rf /afs/athena.mit.edu/org/l/lattelab/www/*
+   rm -rf /afs/athena.mit.edu/org/l/lattelab/*
    ```
+   * scp will replace existing files so not necessary, but unused files might take up storage
 
 2. Deploy the new build:
    ```bash
-   scp -r out/* [MIT_KERB]@athena.dialup.mit.edu:/afs/athena.mit.edu/org/l/lattelab/www
+   scp -r out/* [MIT_KERB]@athena.dialup.mit.edu:/afs/athena.mit.edu/org/l/lattelab
    ```
 
 Replace `[MIT_KERB]` with your MIT Kerberos username.
-
