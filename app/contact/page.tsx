@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/fade-in"
 import { Footer } from "@/components/footer"
 import { HeroSection } from '@/components/hero-section'
+import { MapPin, Mail, Instagram, Linkedin } from "lucide-react"
 import { useState } from "react"
 
 const faqs = [
@@ -80,21 +81,7 @@ export default function ContactPage() {
                             <div className="space-y-6">
                                 <div className="flex items-start gap-4">
                                     <div className="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center flex-shrink-0">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="20"
-                                            height="20"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeWidth="2"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            className="text-brand-dark"
-                                        >
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                            <circle cx="12" cy="10" r="3"></circle>
-                                        </svg>
+                                        <MapPin className="text-brand-dark" size={20} />
                                     </div>
                                     <div>
                                         <h4 className="text-lg font-medium text-brand-dark mb-2">Headquarters</h4>
@@ -110,21 +97,7 @@ export default function ContactPage() {
 
                                 <div className="flex items-start gap-4">
                                     <div className="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center flex-shrink-0">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="20"
-                                            height="20"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeWidth="2"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            className="text-brand-dark"
-                                        >
-                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                            <polyline points="22,6 12,13 2,6"></polyline>
-                                        </svg>
+                                        <Mail className="text-brand-dark" size={20} />
                                     </div>
                                     <div>
                                         <h4 className="text-lg font-medium text-brand-dark mb-2">Email</h4>
@@ -139,44 +112,16 @@ export default function ContactPage() {
                                 <h4 className="text-lg font-medium text-brand-dark mb-4 text-center">Connect With Us</h4>
                                 <div className="flex justify-center space-x-4">
                                     <a
-                                        href="https://www.instagram.com/mitlattelab/#"
+                                        href="https://www.linkedin.com/company/latte-lab/"
                                         className="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center text-brand-dark hover:bg-brand-primary/80 transition-colors"
                                     >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="18"
-                                            height="18"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeWidth="2"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        >
-                                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                            <rect x="2" y="9" width="4" height="12"></rect>
-                                            <circle cx="4" cy="4" r="2"></circle>
-                                        </svg>
+                                        <Linkedin size={18} />
                                     </a>
                                     <a
                                         href="https://www.instagram.com/mitlattelab/#"
                                         className="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center text-brand-dark hover:bg-brand-primary/80 transition-colors"
                                     >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="18"
-                                            height="18"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeWidth="2"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                        >
-                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                        </svg>
+                                        <Instagram size={18} />
                                     </a>
                                 </div>
                             </div>
