@@ -21,8 +21,7 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true
   },
-  output: 'export',
-  basePath: '/lattelab'
+  output: 'export'
 }
 
 mergeConfig(nextConfig, userConfig)

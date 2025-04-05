@@ -58,7 +58,8 @@ yarn build
 The build output will be located in the `out` directory.
 
 ### Deployment
-
+0. (prereq) MIT user deploying must be part of "lattelab-www" group, which can be managed at [webmoira.mit.edu](webmoira.mit.edu)
+   
 1. (Optional) Delete the existing files in the Athena locker:
    ```bash
    ssh [MIT_KERB]@athena.dialup.mit.edu
