@@ -113,7 +113,7 @@ export default function Home() {
             <FadeIn direction="up" duration={0.6} delay={0.1}>
               <div className="text-center md:text-left">
                 <h3 className="text-5xl md:text-6xl font-bold mb-2 text-brand-dark">
-                  <AnimatedNumber value={72} duration={1800} />
+                  <AnimatedNumber value={300} duration={1800} />
                 </h3>
                 <p className="text-brand-dark/70">Members</p>
               </div>
@@ -122,7 +122,7 @@ export default function Home() {
             <FadeIn direction="up" duration={0.6} delay={0.2}>
               <div className="text-center md:text-left">
                 <h3 className="text-5xl md:text-6xl font-bold mb-2 text-brand-dark">
-                  <AnimatedNumber value={750} duration={2000} suffix="+" />
+                  <AnimatedNumber value={2000} duration={2000} suffix="+" />
                 </h3>
                 <p className="text-brand-dark/70">Cups Served</p>
               </div>
