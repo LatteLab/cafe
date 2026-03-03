@@ -5,20 +5,18 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
+import { SITE_NAME, NAV_LINKS, LOGIN_LINK, CONTACT_LINK } from "@/lib/constants"
 
 export function Header() {
     const [isScrolled, setIsScrolled] = useState(false)
     const [isOpen, setIsOpen] = useState(false)
     const pathname = usePathname()
     const isHomePage = pathname === "/"
+    const isDark = isScrolled || !isHomePage
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 10) {
-                setIsScrolled(true)
-            } else {
-                setIsScrolled(false)
-            }
+            setIsScrolled(window.scrollY > 10)
         }
 
         window.addEventListener("scroll", handleScroll)
@@ -36,44 +34,44 @@ export function Header() {
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <Link href="/" className="flex items-center gap-2">
-                    <span
-                        className={`text-xl font-medium ${isScrolled || !isHomePage ? "text-brand-dark" : "text-white"}`}
-                    >
-                        Latte Lab
+                    <span className={`text-xl font-medium ${isDark ? "text-brand-dark" : "text-white"}`}>
+                        {SITE_NAME}
                     </span>
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-8">
-                    <Link
-                        href="/about"
-                        className={`hover:opacity-80 transition-colors ${isScrolled || !isHomePage ? "text-brand-dark" : "text-white"
-                            } ${pathname === "/about" ? "font-medium" : ""}`}
+                    {NAV_LINKS.map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className={`hover:opacity-80 transition-colors ${isDark ? "text-brand-dark" : "text-white"
+                                } ${pathname === link.href ? "font-medium" : ""}`}
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
+                    <a
+                        href={LOGIN_LINK.href}
+                        className={`hover:opacity-80 transition-colors ${isDark ? "text-brand-dark" : "text-white"}`}
                     >
-                        About us
-                    </Link>
-                    <Link
-                        href="/news"
-                        className={`hover:opacity-80 transition-colors ${isScrolled || !isHomePage ? "text-brand-dark" : "text-white"
-                            } ${pathname === "/news" ? "font-medium" : ""}`}
-                    >
-                        News
-                    </Link>
-                    <Link href="/contact">
+                        {LOGIN_LINK.label}
+                    </a>
+                    <Link href={CONTACT_LINK.href}>
                         <Button
                             variant="outline"
                             className={
-                                isScrolled || !isHomePage
+                                isDark
                                     ? "bg-brand-secondary text-brand-dark hover:bg-opacity-90 border-none"
                                     : "bg-brand-primary text-brand-dark hover:bg-opacity-90 border-none"
                             }
                         >
-                            Contact us
+                            {CONTACT_LINK.label}
                         </Button>
                     </Link>
                 </nav>
 
                 <button
-                    className={`md:hidden ${isScrolled || !isHomePage ? "text-brand-dark" : "text-white"}`}
+                    className={`md:hidden ${isDark ? "text-brand-dark" : "text-white"}`}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -83,26 +81,29 @@ export function Header() {
             {isOpen && (
                 <div className="md:hidden bg-white shadow-md absolute top-full left-0 right-0 py-4">
                     <nav className="flex flex-col items-center space-y-4">
-                        <Link
-                            href="/about"
+                        {NAV_LINKS.map((link) => (
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                className="text-brand-dark hover:text-brand-dark/70 transition-colors"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
+                        <a
+                            href={LOGIN_LINK.href}
                             className="text-brand-dark hover:text-brand-dark/70 transition-colors"
                             onClick={() => setIsOpen(false)}
                         >
-                            About us
-                        </Link>
+                            {LOGIN_LINK.label}
+                        </a>
                         <Link
-                            href="/news"
+                            href={CONTACT_LINK.href}
                             className="text-brand-dark hover:text-brand-dark/70 transition-colors"
                             onClick={() => setIsOpen(false)}
                         >
-                            News
-                        </Link>
-                        <Link
-                            href="/contact"
-                            className="text-brand-dark hover:text-brand-dark/70 transition-colors"
-                            onClick={() => setIsOpen(false)}
-                        >
-                            Contact us
+                            {CONTACT_LINK.label}
                         </Link>
                     </nav>
                 </div>

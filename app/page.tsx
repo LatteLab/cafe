@@ -89,7 +89,7 @@ export default function Home() {
               <Image
                 src={MissionImage}
                 alt="Mission image"
-                layout="fill"
+                fill
                 className="object-cover"
               />
             </div>
@@ -160,7 +160,7 @@ export default function Home() {
                   <Image
                     src={ResarchImage}
                     alt="Professional in a modern office setting"
-                    layout="fill"
+                    fill
                     className="object-cover"
                   />
                 </div>
@@ -176,7 +176,7 @@ export default function Home() {
                   <Image
                     src={CafeImage}
                     alt="Team of professionals"
-                    layout="fill"
+                    fill
                     className="object-cover"
                   />
                 </div>
@@ -192,7 +192,7 @@ export default function Home() {
                   <Image
                     src={ConsultingImage}
                     alt="Leadership coaching session"
-                    layout="fill"
+                    fill
                     className="object-cover"
                   />
                 </div>

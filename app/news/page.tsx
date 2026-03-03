@@ -66,7 +66,7 @@ function PressRelease({ date, category, title, description, link, image }: Press
                     <Image
                         src={image}
                         alt={title}
-                        layout="fill"
+                        fill
                         className="object-contain rounded-sm"
                     />
                 </div>
