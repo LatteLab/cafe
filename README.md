@@ -1,75 +1,29 @@
-# Latte Lab Website
+# Latte Lab
 
-This repository contains the source code for the Latte Lab website, built with Next.js and Tailwind CSS.
+A warm, illustrated website for MIT’s student-run coffee club. Built with Next.js 16, React 19, TypeScript, and locally hosted fonts and images.
 
-## Prerequisites
+## Run locally
 
-Ensure you have the following installed on your system:
-- [Node.js](https://nodejs.org/) (version 16 or higher)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+Requires Node.js 22.6 or newer.
 
-## Getting Started
-
-### Clone the Repository
-
-```bash
-git clone [TBD]
-cd lattelab-web
-```
-
-### Install Dependencies
-
-Using npm:
-```bash
-npm install
-```
-
-Or using yarn:
-```bash
-yarn install
-```
-
-### Run in Development Mode
-
-Start the development server:
-```bash
+```sh
+npm ci
 npm run dev
 ```
 
-Or with yarn:
-```bash
-yarn dev
-```
+Open http://localhost:3000. Pages: Home, About, Team, Scrapbook, News, and Join.
 
-The website will be available at [http://localhost:3000](http://localhost:3000).
+## Checks
 
-### Build for Production
-
-To create an optimized production build:
-```bash
+```sh
+npm test
+npm run lint
+npm run typecheck
 npm run build
 ```
 
-Or with yarn:
-```bash
-yarn build
-```
+## Edit content
 
-The build output will be located in the `out` directory.
+Use `content/site.ts` for links and team, `content/scrapbook.ts` for gallery entries, and `content/press.json` for press. Both form URLs are deliberately unset; enter public respondent URLs in the links configuration to activate the Join buttons. Brand and photo provenance is recorded in `content/asset-sources.json`.
 
-### Deployment
-0. (prereq) MIT user deploying must be part of "lattelab-www" group, which can be managed at [webmoira.mit.edu](https://webmoira.mit.edu)
-   
-1. (Optional) Delete the existing files in the Athena locker:
-   ```bash
-   ssh [MIT_KERB]@athena.dialup.mit.edu
-   rm -rf /afs/athena.mit.edu/org/l/lattelab/*
-   ```
-   * scp will replace existing files so not necessary, but unused files might take up storage
-
-2. Deploy the new build:
-   ```bash
-   scp -r out/* [MIT_KERB]@athena.dialup.mit.edu:/afs/athena.mit.edu/org/l/lattelab
-   ```
-
-Replace `[MIT_KERB]` with your MIT Kerberos username.
+See `CLAUDE.md` for maintenance guidance and `IMPLEMENTATION.md` for the rebuild log and remaining content work.

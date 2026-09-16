@@ -1,224 +1,86 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { FadeIn } from "@/components/fade-in"
-import { AnimatedNumber } from "@/components/animated-number"
-import { Footer } from '@/components/footer'
-import HeroImage from '../public/coffee-science.jpeg'
-import MissionImage from '../public/mission.jpeg'
-import ResarchImage from '../public/research.jpeg'
-import CafeImage from '../public/cafe.jpeg'
-import ConsultingImage from '../public/consulting.jpeg'
-
+import type { Metadata } from "next";
+import Link from "next/link";
+import { CoffeeArt } from "@/components/coffee-art";
+import { Polaroid } from "@/components/polaroid";
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-screen">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src={HeroImage}
-            alt="Background image of a professional"
-            fill
-            className="object-cover brightness-50"
-            priority
-          />
-
-        </div>
-
-        <div className="relative z-10 h-full flex flex-col">
-          <div className="flex-1 flex flex-col justify-center px-4 md:px-12 lg:px-20">
-            <div className="max-w-3xl">
-              <FadeIn direction="up" duration={0.8} delay={0.2}>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight mb-6">
-                  Brewing the future
-                  <br />
-                  one cup, one idea
-                  <br />
-                  at a time.
-                </h1>
-              </FadeIn>
-
-              <div className="mt-12 md:mt-24">
-                <FadeIn direction="up" duration={0.8} delay={0.4}>
-                  <p className="text-xl md:text-2xl text-white max-w-2xl">
-                    We are engineering coffee community at MIT.
-                  </p>
-                </FadeIn>
-
-                <FadeIn direction="up" duration={0.8} delay={0.6}>
-                  <div className="mt-8 flex flex-wrap gap-4">
-                    <Link href="/contact" className="bg-brand-primary text-brand-dark hover:bg-opacity-90 border-none px-4 py-2 rounded-md inline-block text-center">
-                      Contact us
-                    </Link>
-                    <Link href="/about">
-                      <Button variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
-                        About us
-                      </Button>
-                    </Link>
-                  </div>
-                </FadeIn>
-              </div>
-            </div>
+    <main id="main" className="home shell">
+      <section className="home-hero">
+        <div className="hero-copy">
+          <p className="eyebrow">
+            <span className="tiny-star">✳</span> GOOD COFFEE. GREAT COMPANY.
+          </p>
+          <h1>
+            Coffee tastes
+            <br />
+            better <em>together.</em>
+          </h1>
+          <p className="hero-description">
+            A student-run coffee club bringing people
+            <br className="desktop-break" /> together across MIT.
+          </p>
+          <div className="hero-actions">
+            <Link href="/join" className="button">
+              Join Latte Lab <span aria-hidden="true">↗</span>
+            </Link>
+            <Link href="/scrapbook" className="text-link">
+              Open our scrapbook <span aria-hidden="true">↗</span>
+            </Link>
           </div>
         </div>
+        <CoffeeArt />
       </section>
-
-      {/* Mission Statement Section */}
-      <section className="bg-brand-secondary">
-        <div className="container mx-auto grid md:grid-cols-2 gap-8">
-          <div className="p-8 md:p-16 lg:p-24">
-            <FadeIn direction="up" duration={0.6}>
-              <h2 className="text-xl text-brand-dark/70 mb-8">Our mission statement</h2>
-            </FadeIn>
-
-            <div className="space-y-4 text-2xl md:text-3xl font-light text-brand-dark">
-              <FadeIn direction="up" duration={0.6} delay={0.1}>
-                <p>We bring engineers, scientists, and coffee lovers together to drive innovation, community, and coffee science.</p>
-              </FadeIn>
-              {/* <FadeIn direction="up" duration={0.6} delay={0.2}>
-                <p>From sketch to investor pitch.</p>
-              </FadeIn>
-              <FadeIn direction="up" duration={0.6} delay={0.3}>
-                <p>From the 'chaos of doing' to delivering a vision.</p>
-              </FadeIn> */}
-            </div>
-          </div>
-          <div className="hidden md:block bg-brand-primary">
-            <div className="aspect-square h-full w-full relative">
-              <Image
-                src={MissionImage}
-                alt="Mission image"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
+      <section
+        className="home-memories"
+        aria-label="A few moments at Latte Lab"
+      >
+        <div className="mini-polaroids">
+          <Link
+            href="/scrapbook"
+            aria-label="See campus pop-ups in the scrapbook"
+          >
+            <Polaroid
+              src="/photos/blueprint-6.webp"
+              alt="Club members serving coffee at Blueprint"
+              caption="around campus"
+              rotation={-5}
+            />
+          </Link>
+          <Link href="/scrapbook" aria-label="See drinks in the scrapbook">
+            <Polaroid
+              src="/photos/saas-1.webp"
+              alt="A latte decorated with rose petals"
+              caption="made with love"
+              rotation={4}
+            />
+          </Link>
+          <Link
+            href="/scrapbook"
+            aria-label="See club socials in the scrapbook"
+          >
+            <Polaroid
+              src="/photos/social-2.webp"
+              alt="Friends chatting at a club social"
+              caption="good company"
+              rotation={-3}
+            />
+          </Link>
         </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-8 md:gap-4">
-            {/* <FadeIn direction="up" duration={0.6}>
-              <div className="text-center md:text-left">
-                <h3 className="text-5xl md:text-6xl font-bold mb-2 text-brand-dark">
-                  <AnimatedNumber value={14} duration={1500} />
-                </h3>
-                <p className="text-brand-dark/70">Office locations</p>
-              </div>
-            </FadeIn> */}
-
-            <FadeIn direction="up" duration={0.6} delay={0.1}>
-              <div className="text-center md:text-left">
-                <h3 className="text-5xl md:text-6xl font-bold mb-2 text-brand-dark">
-                  <AnimatedNumber value={300} duration={1800} />
-                </h3>
-                <p className="text-brand-dark/70">Members</p>
-              </div>
-            </FadeIn>
-
-            <FadeIn direction="up" duration={0.6} delay={0.2}>
-              <div className="text-center md:text-left">
-                <h3 className="text-5xl md:text-6xl font-bold mb-2 text-brand-dark">
-                  <AnimatedNumber value={2000} duration={2000} suffix="+" />
-                </h3>
-                <p className="text-brand-dark/70">Cups Served</p>
-              </div>
-            </FadeIn>
-
-            {/* <FadeIn direction="up" duration={0.6} delay={0.3}>
-              <div className="text-center md:text-left">
-                <h3 className="text-5xl md:text-6xl font-bold mb-2 text-brand-dark">
-                  <AnimatedNumber value={22000} duration={2200} />
-                  <span className="text-5xl md:text-6xl font-bold">k</span>
-                </h3>
-                <p className="text-brand-dark/70">Hours donated</p>
-              </div>
-            </FadeIn> */}
-          </div>
+        <div className="memory-note">
+          <span aria-hidden="true">⤶</span>
+          <p className="handwritten">
+            A few moments,
+            <br />
+            freshly brewed.
+          </p>
         </div>
+        <p className="home-footnote">
+          Come for a cup.
+          <br />
+          <strong>Stay for the people.</strong>
+        </p>
       </section>
-
-      {/* Services Section */}
-      <section className="py-16 md:py-24 bg-brand-secondary">
-        <div className="container mx-auto px-4">
-          <FadeIn direction="up" duration={0.6}>
-            <div className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-medium mb-4 text-brand-dark">What we do</h2>
-              <p className="text-lg text-brand-dark/70 max-w-xl">
-                We use caffeine as a catalyst for innovation, community, and impact.
-              </p>
-            </div>
-          </FadeIn>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <FadeIn direction="up" duration={0.6} delay={0.1}>
-              <div>
-                <div className="aspect-square relative mb-6 overflow-hidden rounded-sm">
-                  <Image
-                    src={ResarchImage}
-                    alt="Professional in a modern office setting"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-medium mb-2 text-brand-dark">
-                  Coffee Science Research
-                </h3>
-              </div>
-            </FadeIn>
-
-            <FadeIn direction="up" duration={0.6} delay={0.2}>
-              <div>
-                <div className="aspect-square relative mb-6 overflow-hidden rounded-sm">
-                  <Image
-                    src={CafeImage}
-                    alt="Team of professionals"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-medium mb-2 text-brand-dark">
-                  Specialty Coffee Cart
-                </h3>
-              </div>
-            </FadeIn>
-
-            <FadeIn direction="up" duration={0.6} delay={0.3}>
-              <div>
-                <div className="aspect-square relative mb-6 overflow-hidden rounded-sm">
-                  <Image
-                    src={ConsultingImage}
-                    alt="Leadership coaching session"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-medium mb-2 text-brand-dark">
-                  Coffee Technology Consulting
-                </h3>
-              </div>
-            </FadeIn>
-          </div>
-
-          {/* <FadeIn direction="up" duration={0.6} delay={0.4}>
-            <div className="mt-8">
-              <Link href="/services">
-                <Button
-                  variant="outline"
-                  className="bg-brand-primary text-brand-dark border-brand-primary hover:bg-brand-primary/80"
-                >
-                  Read more
-                </Button>
-              </Link>
-            </div>
-          </FadeIn> */}
-        </div>
-      </section>
-      <Footer />
     </main>
-  )
+  );
 }
-
