@@ -62,3 +62,7 @@ Use App Router / React 19 / TypeScript / Tailwind 4, npm lockfile, optimized loc
 
 - Replaced both placeholder destinations with verified public Google Forms links. Resolved the membership editing URL to its canonical respondent URL.
 - Clarified hyperlink labels and descriptions to distinguish the membership mailing list from the internal club team application. Both open in a new tab with accessible notice.
+
+## About illustrations — 2026-09-17
+
+- Enlarged the three activity illustrations to 180px on desktop, 130px on tablet, and a 90px-wide mobile column. Updated image sizing hints to retain sharp rendering.

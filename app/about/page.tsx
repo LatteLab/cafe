@@ -71,8 +71,9 @@ export default function About() {
             <article key={a.title}>
               <Image
                 src={`/brand/${a.art}.webp`}
-                width={110}
-                height={110}
+                width={180}
+                height={180}
+                sizes="(max-width: 480px) 90px, (max-width: 760px) 130px, 180px"
                 alt=""
               />
               <h3>{a.title}</h3>
