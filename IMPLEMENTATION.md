@@ -57,3 +57,8 @@ Use App Router / React 19 / TypeScript / Tailwind 4, npm lockfile, optimized loc
 ## Release authorization
 
 - 2026-09-16: User approved merging and production deployment. Tests, lint, types, production build and diff checks passed again before release.
+
+## Join links — 2026-09-17
+
+- Replaced both placeholder destinations with verified public Google Forms links. Resolved the membership editing URL to its canonical respondent URL.
+- Clarified hyperlink labels and descriptions to distinguish the membership mailing list from the internal club team application. Both open in a new tab with accessible notice.

@@ -12,7 +12,7 @@ Keep the homepage short. Warm cream, forest green, espresso typography, original
 ## Maintenance
 
 - IMPLEMENTATION.md is the single active rebuild plan and progress log. Update it rather than adding duplicate plans.
-- content/site.ts holds navigation, team, and links. Membership and club application are intentionally null pending public respondent URLs; the Join page renders accessible disabled placeholders. Replace each with its real URL to enable it.
+- content/site.ts holds navigation, team, and links. Membership mailing list and internal team application use verified public Google Forms respondent URLs. Keep editing URLs and tracking parameters out of visitor-facing links.
 - content/scrapbook.ts contains curated photos and captions. Extend its typed entries to add memories. Assets are local optimized WebP files.
 - content/asset-sources.json records original Drive IDs, not expiring download URLs.
 - content/press.json preserves earlier press records. Distinguish direct club coverage from wider MIT coffee stories.

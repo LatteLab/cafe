@@ -3,9 +3,10 @@ export const site = {
   url: "https://www.lattelab.org",
   email: "lattelab-exec@mit.edu",
   instagram: "https://www.instagram.com/mitlattelab/",
-  // Intentionally unset for the design preview. Replace with public respondent URLs.
-  membershipUrl: null as string | null,
-  applicationUrl: null as string | null,
+  membershipUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLScUINiiG82aLoLGDPoFYIuQBFsOPn4rWHA4WUgTixA8x6ONIg/viewform",
+  applicationUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLSeCq-6WLcnU4H9A607sASLjyPEKrNtqBabeRMLeXrn1gNLM0A/viewform",
 };
 export const navigation = [
   { href: "/about", label: "About" },

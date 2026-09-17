@@ -24,6 +24,6 @@ npm run build
 
 ## Edit content
 
-Use `content/site.ts` for links and team, `content/scrapbook.ts` for gallery entries, and `content/press.json` for press. Both form URLs are deliberately unset; enter public respondent URLs in the links configuration to activate the Join buttons. Brand and photo provenance is recorded in `content/asset-sources.json`.
+Use `content/site.ts` for links and team, `content/scrapbook.ts` for gallery entries, and `content/press.json` for press. Both Join links use public Google Forms respondent URLs configured in content/site.ts. Brand and photo provenance is recorded in `content/asset-sources.json`.
 
 See `CLAUDE.md` for maintenance guidance and `IMPLEMENTATION.md` for the rebuild log and remaining content work.

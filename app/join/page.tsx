@@ -60,13 +60,13 @@ export default function Join() {
         <div className="join-links">
           <FormLink
             href={site.membershipUrl}
-            label="Membership form"
-            description="Join the community."
+            label="Join the membership mailing list"
+            description="Stay in the loop on coffee, events, and club updates."
           />
           <FormLink
             href={site.applicationUrl}
-            label="Club application"
-            description="Help make it happen."
+            label="Apply to the club team"
+            description="Help bring Latte Lab events and ideas to life."
             secondary
           />
         </div>
