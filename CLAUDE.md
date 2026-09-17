@@ -27,4 +27,6 @@ Run npm test, npm run lint, npm run typecheck, npm run build. Check mobile navig
 
 ## Signature footer
 
-components/site-footer.tsx uses the original user-supplied sweater back.svg as public/brand/wordmark.svg. Keep its flourishes intact. Forest/cream palette, one viewport reveal and an automatic drifting caramel glow on desktop and mobile; reduced motion disables both. Footer links remain ordinary keyboard-accessible anchors.
+components/site-footer.tsx uses the original user-supplied sweater back.svg as public/brand/wordmark.svg. Keep its flourishes intact. Forest/cream palette, immediately visible inline SVG with an automatic drifting caramel glow on desktop and mobile; reduced motion disables animation. The footer is server-rendered with no hydration or external SVG fetch required. Geometry lives in components/footer-wordmark.tsx. Footer links remain ordinary keyboard-accessible anchors.
+
+Vercel Web Analytics is installed via @vercel/analytics/next in the root layout. Dashboard enablement is managed in Vercel.

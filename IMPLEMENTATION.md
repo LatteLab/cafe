@@ -80,3 +80,9 @@ Use App Router / React 19 / TypeScript / Tailwind 4, npm lockfile, optimized loc
 ## Automatic footer glow — 2026-09-17
 
 - Replaced cursor-driven highlight with a continuous, slow caramel gradient sweep. Runs on mobile too; reduced motion retains the static cream wordmark. Removed pointer event handling.
+
+## Footer load and analytics — 2026-09-17
+
+- Live SVG measured 5,752 bytes and ~0.23s for one request; not a broad performance benchmark. Removed deliberate 1.1s reveal and client observer/hydration dependency.
+- Original SVG paths are now inline in server-rendered HTML, eliminating the CSS-mask image fetch while retaining the automatic glow and reduced-motion fallback.
+- Installed official Vercel Analytics and added its Next.js component once in the root layout.

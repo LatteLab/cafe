@@ -1,28 +1,8 @@
-"use client";
-
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { FooterWordmark } from "./footer-wordmark";
 import { site } from "@/content/site";
 
 export function SiteFooter() {
-  const artwork = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const element = artwork.current;
-    if (!element || !("IntersectionObserver" in window)) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          element.classList.add("is-revealed");
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.25 },
-    );
-    observer.observe(element);
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <footer className="signature-footer">
       <div className="shell signature-inner">
@@ -32,13 +12,8 @@ export function SiteFooter() {
             Join us <span aria-hidden="true">↗</span>
           </Link>
         </div>
-        <div
-          ref={artwork}
-          className="signature-art"
-          role="img"
-          aria-label="Latte Lab"
-        >
-          <span className="signature-ink" aria-hidden="true" />
+        <div className="signature-art" role="img" aria-label="Latte Lab">
+          <FooterWordmark />
         </div>
         <div className="signature-meta">
           <p>Student brewed. MIT, Cambridge.</p>

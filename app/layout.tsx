@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "@fontsource/fraunces/latin-600.css";
 import "@fontsource/fraunces/latin-700.css";
 import "@fontsource/dm-sans/latin-400.css";
@@ -40,6 +41,7 @@ export default function RootLayout({
         <SiteHeader />
         {children}
         <SiteFooter />
+        <Analytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
