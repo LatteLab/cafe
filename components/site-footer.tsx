@@ -37,22 +37,6 @@ export function SiteFooter() {
           className="signature-art"
           role="img"
           aria-label="Latte Lab"
-          onPointerMove={(event) => {
-            if (
-              event.pointerType !== "mouse" ||
-              window.matchMedia("(prefers-reduced-motion: reduce)").matches
-            )
-              return;
-            const bounds = event.currentTarget.getBoundingClientRect();
-            event.currentTarget.style.setProperty(
-              "--shine-x",
-              `${((event.clientX - bounds.left) / bounds.width) * 100}%`,
-            );
-            event.currentTarget.style.setProperty(
-              "--shine-y",
-              `${((event.clientY - bounds.top) / bounds.height) * 100}%`,
-            );
-          }}
         >
           <span className="signature-ink" aria-hidden="true" />
         </div>

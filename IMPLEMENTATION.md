@@ -76,3 +76,7 @@ Use App Router / React 19 / TypeScript / Tailwind 4, npm lockfile, optimized loc
 - Approved forest/cream footer with original sweater wordmark, Join CTA, Instagram and email.
 - Lightweight CSS SVG mask, once-per-mount viewport reveal, mouse-following caramel highlight, static reduced-motion fallback, responsive sizing. Original artwork preserved at public/brand/wordmark.svg.
 - Verification: lint and production build passed; desktop reveal and complete wordmark visually checked, mobile layout reviewed at 390px.
+
+## Automatic footer glow — 2026-09-17
+
+- Replaced cursor-driven highlight with a continuous, slow caramel gradient sweep. Runs on mobile too; reduced motion retains the static cream wordmark. Removed pointer event handling.

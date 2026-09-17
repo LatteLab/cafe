@@ -1725,21 +1725,29 @@ h1 em::after {
   mask: url("/brand/wordmark.svg") center / contain no-repeat;
   -webkit-mask: url("/brand/wordmark.svg") center / contain no-repeat;
 }
+/* A slow, automatic pool of warm light, clipped to the wordmark. */
 .signature-ink::after {
   content: "";
   position: absolute;
-  inset: 0;
+  top: -20%;
+  left: 0;
+  width: 70%;
+  height: 140%;
   background: radial-gradient(
-    ellipse 190px 140px at var(--shine-x, 50%) var(--shine-y, 50%),
-    #d9a25f,
-    transparent 100%
+    ellipse at center,
+    #e6b771 0%,
+    #d9a25fcc 28%,
+    transparent 70%
   );
-  opacity: 0;
-  transition: opacity 350ms;
+  animation: signature-glow 7s ease-in-out infinite alternate;
+  pointer-events: none;
 }
-@media (hover: hover) and (pointer: fine) {
-  .signature-art:hover .signature-ink::after {
-    opacity: 1;
+@keyframes signature-glow {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
 .signature-art.is-revealed .signature-ink {

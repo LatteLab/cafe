@@ -27,4 +27,4 @@ Run npm test, npm run lint, npm run typecheck, npm run build. Check mobile navig
 
 ## Signature footer
 
-components/site-footer.tsx uses the original user-supplied sweater back.svg as public/brand/wordmark.svg. Keep its flourishes intact. Forest/cream palette, one viewport reveal and optional pointer highlight; reduced motion disables both. Footer links remain ordinary keyboard-accessible anchors.
+components/site-footer.tsx uses the original user-supplied sweater back.svg as public/brand/wordmark.svg. Keep its flourishes intact. Forest/cream palette, one viewport reveal and an automatic drifting caramel glow on desktop and mobile; reduced motion disables both. Footer links remain ordinary keyboard-accessible anchors.
