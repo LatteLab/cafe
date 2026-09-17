@@ -1674,3 +1674,137 @@ h1 em::after {
     translate: 0 0;
   }
 }
+
+/* Original sweater artwork becomes the site's closing signature. */
+.signature-footer {
+  background: #243e30;
+  color: #f8f1df;
+  padding: 32px 0 22px;
+}
+.signature-invitation {
+  text-align: center;
+}
+.signature-invitation p {
+  font-family: "Caveat", cursive;
+  font-size: clamp(26px, 3vw, 34px);
+  margin-bottom: 5px;
+}
+.signature-invitation a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  padding: 7px 3px;
+  border-bottom: 1px solid #f8f1df70;
+  transition:
+    color 180ms,
+    transform 180ms;
+}
+.signature-invitation a span {
+  transition: transform 180ms;
+}
+.signature-invitation a:hover,
+.signature-invitation a:focus-visible {
+  color: #e5b777;
+  transform: translateY(-2px);
+}
+.signature-invitation a:hover span {
+  transform: translate(2px, -2px);
+}
+.signature-art {
+  width: min(100%, 950px);
+  aspect-ratio: 737.52 / 213.81;
+  margin: 18px auto 24px;
+}
+.signature-ink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #f8f1df;
+  mask: url("/brand/wordmark.svg") center / contain no-repeat;
+  -webkit-mask: url("/brand/wordmark.svg") center / contain no-repeat;
+}
+.signature-ink::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 190px 140px at var(--shine-x, 50%) var(--shine-y, 50%),
+    #d9a25f,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 350ms;
+}
+@media (hover: hover) and (pointer: fine) {
+  .signature-art:hover .signature-ink::after {
+    opacity: 1;
+  }
+}
+.signature-art.is-revealed .signature-ink {
+  animation: signature-reveal 1100ms cubic-bezier(0.2, 0.65, 0.3, 1) both;
+}
+@keyframes signature-reveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+    transform: translateY(8px);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+    transform: translateY(0);
+  }
+}
+.signature-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #f8f1df30;
+  font-size: 12px;
+}
+.signature-meta p {
+  margin: 0;
+}
+.signature-meta > div {
+  display: flex;
+  gap: 26px;
+}
+.signature-meta a {
+  padding: 8px 0;
+  display: inline-block;
+}
+.signature-meta a:hover {
+  color: #e5b777;
+}
+.signature-footer a:focus-visible {
+  outline: 2px solid #e5b777;
+  outline-offset: 5px;
+}
+@media (max-width: 600px) {
+  .signature-footer {
+    padding-top: 27px;
+  }
+  .signature-art {
+    margin: 24px auto;
+  }
+  .signature-meta {
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .signature-art.is-revealed .signature-ink {
+    animation: none;
+  }
+  .signature-ink::after {
+    display: none;
+  }
+  .signature-invitation a,
+  .signature-invitation a span {
+    transition: none;
+    transform: none !important;
+  }
+}

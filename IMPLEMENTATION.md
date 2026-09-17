@@ -70,3 +70,9 @@ Use App Router / React 19 / TypeScript / Tailwind 4, npm lockfile, optimized loc
 ## About group photo — 2026-09-17
 
 - Replaced the About hero photo with user-supplied IMG_7876.jpeg, optimized to WebP. Used a landscape CSS frame and gentle zoom to trim empty floor without altering the original photo or cutting out members.
+
+## Signature footer — 2026-09-17
+
+- Approved forest/cream footer with original sweater wordmark, Join CTA, Instagram and email.
+- Lightweight CSS SVG mask, once-per-mount viewport reveal, mouse-following caramel highlight, static reduced-motion fallback, responsive sizing. Original artwork preserved at public/brand/wordmark.svg.
+- Verification: lint and production build passed; desktop reveal and complete wordmark visually checked, mobile layout reviewed at 390px.
