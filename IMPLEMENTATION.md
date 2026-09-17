@@ -66,3 +66,7 @@ Use App Router / React 19 / TypeScript / Tailwind 4, npm lockfile, optimized loc
 ## About illustrations — 2026-09-17
 
 - Enlarged the three activity illustrations to 180px on desktop, 130px on tablet, and a 90px-wide mobile column. Updated image sizing hints to retain sharp rendering.
+
+## About group photo — 2026-09-17
+
+- Replaced the About hero photo with user-supplied IMG_7876.jpeg, optimized to WebP. Used a landscape CSS frame and gentle zoom to trim empty floor without altering the original photo or cutting out members.

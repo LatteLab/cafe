@@ -30,8 +30,8 @@ export default function About() {
         <div className="about-photo">
           <span className="paper-tape" aria-hidden="true" />
           <Polaroid
-            src="/photos/social-1.webp"
-            alt="Latte Lab members gathered around a table at a club social"
+            src="/photos/about-group.webp"
+            alt="Latte Lab members in aprons gathered for a group photo"
             caption="a few cups, a lot of friends"
             rotation={3}
             priority
