@@ -139,3 +139,5 @@ User approved merging all preview work to main without squashing and deploying. 
 - Join copy refinement: removed eyebrow and “Pull up a chair”; “Find your way into Latte Lab.” is now the sole, modestly sized heading. Local review on codex/join-copy.
 
 - Removed footer invitation text. A keyboard-accessible full-footer membership link now covers the main footer area; social/email links remain independently clickable above it.
+
+- Added user-supplied 43901824_Unknown.JPG to scrapbook Events as “Matching sweaters, good company,” optimized to WebP. No date assumed.
