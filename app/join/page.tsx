@@ -59,12 +59,7 @@ export default function Join() {
         preload
       />
       <section className="join-content">
-        <p className="eyebrow">GOOD COMPANY STARTS HERE</p>
-        <h1>
-          Pull up
-          <br />a <em>chair.</em>
-        </h1>
-        <p className="intro-copy">Find your way into Latte Lab.</p>
+        <h1 className="join-heading">Find your way into Latte Lab.</h1>
         <div className="join-links">
           <FormLink
             href={site.membershipUrl}

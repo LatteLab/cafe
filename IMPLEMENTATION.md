@@ -135,3 +135,5 @@ Use App Router / React 19 / TypeScript / Tailwind 4, npm lockfile, optimized loc
 ## Approved release
 
 User approved merging all preview work to main without squashing and deploying. Removed the first-frame eyebrow. Final checks run before release; preserve the feature commit through a merge commit.
+
+- Join copy refinement: removed eyebrow and “Pull up a chair”; “Find your way into Latte Lab.” is now the sole, modestly sized heading. Local review on codex/join-copy.
