@@ -22,6 +22,10 @@ export function SiteFooter() {
               Instagram <span aria-hidden="true">↗</span>
               <span className="sr-only"> (opens in a new tab)</span>
             </a>
+            <a href={site.linkedin} target="_blank" rel="noopener noreferrer">
+              LinkedIn <span aria-hidden="true">↗</span>
+              <span className="sr-only"> (opens in a new tab)</span>
+            </a>
             <a href={`mailto:${site.email}`}>
               Email us <span aria-hidden="true">↗</span>
             </a>

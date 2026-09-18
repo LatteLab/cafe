@@ -2,6 +2,7 @@ export const site = {
   name: "Latte Lab",
   url: "https://www.lattelab.org",
   email: "lattelab-exec@mit.edu",
+  linkedin: "https://www.linkedin.com/company/latte-lab/",
   instagram: "https://www.instagram.com/mitlattelab/",
   membershipUrl:
     "https://docs.google.com/forms/d/e/1FAIpQLScUINiiG82aLoLGDPoFYIuQBFsOPn4rWHA4WUgTixA8x6ONIg/viewform",

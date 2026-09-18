@@ -99,3 +99,7 @@ Use App Router / React 19 / TypeScript / Tailwind 4, npm lockfile, optimized loc
 ## Homepage title — 2026-09-18
 
 - Simplified the default page title to Latte Lab, which supplies the homepage browser tab, Open Graph title, and Twitter title. Interior page titles retain their existing template.
+
+## Footer LinkedIn — 2026-09-18
+
+- Added the official LinkedIn company link beside Instagram and Email in the footer, opening in a new tab with an accessible notice.
