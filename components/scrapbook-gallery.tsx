@@ -77,7 +77,6 @@ export function ScrapbookGallery() {
                   sizes="(max-width: 600px) 85vw, (max-width: 900px) 42vw, 360px"
                 />
               </span>
-              <span className="handwritten">{entry.caption}</span>
               <span className="photo-plus" aria-hidden="true">
                 ↗
               </span>

@@ -141,3 +141,7 @@ User approved merging all preview work to main without squashing and deploying. 
 - Removed footer invitation text. A keyboard-accessible full-footer membership link now covers the main footer area; social/email links remain independently clickable above it.
 
 - Added user-supplied 43901824_Unknown.JPG to scrapbook Events as “Matching sweaters, good company,” optimized to WebP. No date assumed.
+
+- Added a user-supplied pasted photo to scrapbook Events as “A pourover lesson with Korean Momma” (id `korean-momma-pourover`), optimized to WebP. No date assumed; whiteboard in the photo reads “Korean Momma x Latte Lab pourover event.”
+
+- Added a user-supplied pasted photo to scrapbook Events as “Brewing at the CSAIL R&D event” (id `csail-rd-event`), optimized to WebP. No date assumed; user identified it as a Latte Lab x CSAIL R&D event.

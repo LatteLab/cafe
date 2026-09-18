@@ -9,6 +9,22 @@ export type ScrapbookEntry = {
 };
 export const entries: ScrapbookEntry[] = [
   {
+    id: "csail-rd-event",
+    caption: "Brewing at the CSAIL R&D event",
+    collection: "Latte Lab x CSAIL",
+    category: "Events",
+    date: "",
+    alt: "A Latte Lab member in a Latte Lab apron talking with a teammate behind the counter at the CSAIL R&D event, with a coffee maker and espresso machine on the counter",
+  },
+  {
+    id: "korean-momma-pourover",
+    caption: "A pourover lesson with Korean Momma",
+    collection: "Korean Momma collaboration",
+    category: "Events",
+    date: "",
+    alt: "Latte Lab members seated around a table for a Korean Momma x Latte Lab pourover event, with a presenter explaining brewing in front of a whiteboard",
+  },
+  {
     id: "matching-sweaters",
     caption: "Matching sweaters, good company",
     collection: "Latte Lab moments",

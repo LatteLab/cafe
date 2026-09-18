@@ -942,12 +942,6 @@ h1 em::after {
 .photo-open:hover img {
   transform: scale(1.035);
 }
-.photo-open .handwritten {
-  display: block;
-  font-size: 24px;
-  margin-top: 15px;
-  line-height: 1.2;
-}
 .photo-plus {
   position: absolute;
   right: 20px;
@@ -1208,9 +1202,6 @@ h1 em::after {
   .scrap-grid {
     gap: 37px 25px;
   }
-  .photo-open .handwritten {
-    font-size: 21px;
-  }
   .scrap-meta {
     flex-direction: column;
     gap: 0;
@@ -1457,9 +1448,6 @@ h1 em::after {
   .photo-open {
     padding: 8px 8px 14px;
   }
-  .photo-open .handwritten {
-    font-size: 22px;
-  }
   .paper-tape {
     width: 75px;
     left: calc(50% - 37px);
@@ -1602,9 +1590,6 @@ h1 em::after {
   }
   .photo-open {
     padding: 12px 12px 18px;
-  }
-  .photo-open .handwritten {
-    font-size: 27px;
   }
   .scrap-meta {
     flex-direction: row;
