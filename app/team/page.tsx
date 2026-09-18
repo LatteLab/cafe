@@ -32,6 +32,8 @@ export default function Team() {
                 alt=""
                 width={160}
                 height={160}
+                sizes="(max-width: 480px) 85px, (max-width: 760px) 100px, 125px"
+                priority={i < 3}
               />
             </div>
             <div className="team-label">

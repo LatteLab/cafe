@@ -15,9 +15,6 @@
     "node": ">=22.6"
   },
   "dependencies": {
-    "@fontsource/caveat": "^5",
-    "@fontsource/dm-sans": "^5",
-    "@fontsource/fraunces": "^5",
     "@fontsource/young-serif": "^5.3.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",

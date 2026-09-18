@@ -9,8 +9,8 @@
   --line: #d9d7c9;
   --yellow: #eed396;
   --rust: #ad6552;
-  --font-body: "DM Sans", sans-serif;
-  --font-heading: "Fraunces", Georgia, serif;
+  --font-body: var(--font-dm-sans), sans-serif;
+  --font-heading: var(--font-fraunces), Georgia, serif;
 }
 @theme inline {
   --color-background: var(--cream);
@@ -128,7 +128,7 @@ h1 em::after {
   line-height: 1.6;
 }
 .handwritten {
-  font-family: "Caveat", cursive;
+  font-family: var(--font-caveat), cursive;
   font-size: 26px;
   line-height: 1.2;
 }
@@ -373,7 +373,7 @@ h1 em::after {
   object-fit: cover;
 }
 .polaroid figcaption {
-  font-family: "Caveat", cursive;
+  font-family: var(--font-caveat), cursive;
   font-size: 21px;
   text-align: center;
   padding-top: 6px;
@@ -479,7 +479,7 @@ h1 em::after {
   position: absolute;
   left: -2%;
   bottom: 6%;
-  font-family: "Caveat", cursive;
+  font-family: var(--font-caveat), cursive;
   font-size: 23px;
   transform: rotate(-8deg);
   color: #68775e;
@@ -894,7 +894,7 @@ h1 em::after {
   position: absolute;
   right: 0;
   color: #787c6c;
-  font-family: "Caveat", cursive;
+  font-family: var(--font-caveat), cursive;
   font-size: 21px;
 }
 .scrap-grid {
