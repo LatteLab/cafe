@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CoffeeArt } from "@/components/coffee-art";
+import Image from "next/image";
 import { site } from "@/content/site";
 export const metadata: Metadata = {
   title: "Join the club",
@@ -49,7 +49,15 @@ function FormLink({
 export default function Join() {
   return (
     <main id="main" className="shell join-page">
-      <CoffeeArt small />
+      <Image
+        className="join-member-seal"
+        src="/brand/member-wax-seal.webp"
+        alt="Green Latte Lab member wax-seal sticker with a beaver emblem"
+        width={1000}
+        height={1000}
+        sizes="(max-width: 760px) 280px, 480px"
+        preload
+      />
       <section className="join-content">
         <p className="eyebrow">GOOD COMPANY STARTS HERE</p>
         <h1>
@@ -73,6 +81,9 @@ export default function Join() {
         <div className="join-socials">
           <a href={site.instagram} target="_blank" rel="noopener noreferrer">
             Instagram ↗<span className="sr-only"> (opens in a new tab)</span>
+          </a>
+          <a href={site.linkedin} target="_blank" rel="noopener noreferrer">
+            LinkedIn ↗<span className="sr-only"> (opens in a new tab)</span>
           </a>
           <a href={`mailto:${site.email}`}>Email us ↗</a>
         </div>

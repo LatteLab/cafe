@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FooterWordmark } from "./footer-wordmark";
 import { site } from "@/content/site";
 
@@ -8,9 +7,14 @@ export function SiteFooter() {
       <div className="shell signature-inner">
         <div className="signature-invitation">
           <p>See you over coffee.</p>
-          <Link href="/join">
-            Join us <span aria-hidden="true">↗</span>
-          </Link>
+          <a
+            href={site.membershipUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join the mailing list <span aria-hidden="true">↗</span>
+            <span className="sr-only"> (opens in a new tab)</span>
+          </a>
         </div>
         <div className="signature-art" role="img" aria-label="Latte Lab">
           <FooterWordmark />
