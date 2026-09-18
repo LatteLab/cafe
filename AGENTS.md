@@ -1,3 +1,12 @@
+# Agent guidance
+
+- Read `CLAUDE.md` for project context before making changes.
+- Keep the experience clean, welcoming, and consistent with Latte Lab’s identity.
+- Make focused changes and preserve unrelated work.
+- Prefer simple, accessible, maintainable solutions.
+- Verify changes and clearly report any limitations.
+- Follow the user’s requested scope for previews, commits, and deployment.
+
 <!-- BEGIN:nextjs-agent-rules -->
 
 # This is NOT the Next.js you know

@@ -1693,7 +1693,7 @@ h1 em::after {
 }
 .signature-glow {
   transform-box: fill-box;
-  animation: signature-glow 7s ease-in-out infinite alternate;
+  animation: signature-glow 4s ease-in-out infinite alternate;
   pointer-events: none;
 }
 @keyframes signature-glow {
