@@ -157,3 +157,5 @@ User approved merging all preview work to main without squashing and deploying. 
 - Filled in every scrapbook entry's bottom-right date as a semester (Fall/Spring + year), per user request. Month dates converted mechanically (October 2025 → Fall 2025, February 2026 → Spring 2026). User supplied the semester for entries that had no date: `dubai-coffee-taste-test`, `csail-rd-event`, `korean-momma-pourover`, `matching-sweaters`, `photoshoot-polaroids` → Spring 2026; `salted-caramel-butter-pecan` → Fall 2025.
 
 - Renamed `passionfruit-coldbrew-fall-2026`'s collection text to “First semester event: Brew and Meet!” at user request (was “First event of fall 2026”).
+
+- About page ethos section: removed the "THERE'S A PLACE FOR YOU HERE" eyebrow and the "espresso machine" paragraph, and renamed the "Pull up a chair" button to "Get involved," per user request. Removed the now-dead `.ethos > p` CSS rules.

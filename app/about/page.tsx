@@ -83,19 +83,14 @@ export default function About() {
         </div>
       </section>
       <section className="ethos">
-        <span className="eyebrow">THERE’S A PLACE FOR YOU HERE</span>
         <h2>
           A good cup can make
           <br />
           campus feel a little smaller.
         </h2>
-        <p>
-          You don’t need to know your way around an espresso machine to belong
-          here. Curiosity and good company are enough.
-        </p>
         <div className="hero-actions">
           <Link className="button" href="/join">
-            Pull up a chair <span aria-hidden="true">↗</span>
+            Get involved <span aria-hidden="true">↗</span>
           </Link>
           <Link className="text-link" href="/team">
             Meet the team <span aria-hidden="true">↗</span>
