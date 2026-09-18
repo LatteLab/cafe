@@ -798,19 +798,11 @@ h1 em::after {
 .join-link button:disabled {
   opacity: 0.83;
 }
-.join-link > p {
-  margin-top: 8px;
-  font-size: 12px;
-  color: #716a5d;
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-}
 .coming-soon {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: #827b69;
+  color: #d6d8c7;
 }
 .join-socials {
   display: flex;

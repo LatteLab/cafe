@@ -171,3 +171,7 @@ User approved merging all preview work to main without squashing and deploying. 
 - Added Terry Kim ("Founder & Coffee Scientist") to the bottom of the /team grid, with a user-supplied illustration (public/brand/coffee-scientist.webp) matching the existing team-icon style.
 
 - Added a third /join button, "Add events to your calendar," linking to the Latte Lab events Google Calendar subscribe URL (site.calendarUrl), styled like the primary "Join the membership mailing list" button per user request. No CSS changes needed — .join-links is an unbounded grid that stacks rows automatically.
+
+- Simplified /join buttons per user request: removed all description text under each button and made every button filled (dropped the `secondary`/outline style from "Apply to the club team"). Simplified the FormLink component's props accordingly (dropped `description`/`secondary`), removed the now-dead `.join-link > p` CSS rule, and moved the "Link coming soon" fallback text inline into the button (still only used if a URL is ever unset).
+
+- Changed the /join heading to "Find your way into Latte Lab!" (period → exclamation point) at user request.

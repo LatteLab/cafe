@@ -7,42 +7,20 @@ export const metadata: Metadata = {
     "Find your way into Latte Lab: club membership, team applications, Instagram, and contact details.",
   alternates: { canonical: "/join" },
 };
-function FormLink({
-  href,
-  label,
-  description,
-  secondary = false,
-}: {
-  href: string | null;
-  label: string;
-  description: string;
-  secondary?: boolean;
-}) {
+function FormLink({ href, label }: { href: string | null; label: string }) {
   return (
     <div className="join-link">
       {href ? (
-        <a
-          className={`button ${secondary ? "button-outline" : ""}`}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="button" href={href} target="_blank" rel="noopener noreferrer">
           {label} <span aria-hidden="true">↗</span>
           <span className="sr-only"> (opens in a new tab)</span>
         </a>
       ) : (
-        <button
-          className={`button ${secondary ? "button-outline" : ""}`}
-          disabled
-          aria-describedby={secondary ? "application-note" : "membership-note"}
-        >
+        <button className="button" disabled>
           {label} <span aria-hidden="true">↗</span>
+          <span className="coming-soon"> Link coming soon</span>
         </button>
       )}
-      <p id={secondary ? "application-note" : "membership-note"}>
-        {description}
-        {!href && <span className="coming-soon">Link coming soon</span>}
-      </p>
     </div>
   );
 }
@@ -59,24 +37,11 @@ export default function Join() {
         preload
       />
       <section className="join-content">
-        <h1 className="join-heading">Find your way into Latte Lab.</h1>
+        <h1 className="join-heading">Find your way into Latte Lab!</h1>
         <div className="join-links">
-          <FormLink
-            href={site.membershipUrl}
-            label="Join the membership mailing list"
-            description="Stay in the loop on coffee, events, and club updates."
-          />
-          <FormLink
-            href={site.applicationUrl}
-            label="Apply to the club team"
-            description="Help bring Latte Lab events and ideas to life."
-            secondary
-          />
-          <FormLink
-            href={site.calendarUrl}
-            label="Add events to your calendar"
-            description="Get pop-ups, workshops, and socials right on your calendar."
-          />
+          <FormLink href={site.membershipUrl} label="Join the membership mailing list" />
+          <FormLink href={site.applicationUrl} label="Apply to the club team" />
+          <FormLink href={site.calendarUrl} label="Add events to your calendar" />
         </div>
         <div className="join-socials">
           <a href={site.instagram} target="_blank" rel="noopener noreferrer">
