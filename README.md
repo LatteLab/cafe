@@ -1,6 +1,10 @@
-# Latte Lab
+# cafe
 
-A warm, illustrated website for MIT’s student-run coffee club. Built with Next.js 16, React 19, TypeScript, and locally hosted fonts and images.
+Latte Lab’s public website — the front door to MIT’s student-run coffee community. Discover the club, meet the team, browse memories, and find out how to join.
+
+**Why cafe?** It’s where people discover Latte Lab and get a feel for the community. Our companion repository, [brewroom](https://github.com/LatteLab/brewroom), houses the member app and internal tools: where things get made.
+
+Visit [lattelab.org](https://www.lattelab.org). Built with Next.js 16, React 19, TypeScript, and locally hosted fonts and images.
 
 ## Run locally
 
