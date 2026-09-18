@@ -169,3 +169,5 @@ User approved merging all preview work to main without squashing and deploying. 
 - Secondary cleanup on the same /team investigation: added `priority` to the first 3 (first-row) team member illustration images and a `sizes` prop matching the actual rendered widths at each breakpoint (85px/100px/125px), so Next requests appropriately-sized images instead of oversized ones and doesn't lazy-load above-the-fold content.
 
 - Added Terry Kim ("Founder & Coffee Scientist") to the bottom of the /team grid, with a user-supplied illustration (public/brand/coffee-scientist.webp) matching the existing team-icon style.
+
+- Added a third /join button, "Add events to your calendar," linking to the Latte Lab events Google Calendar subscribe URL (site.calendarUrl), styled like the primary "Join the membership mailing list" button per user request. No CSS changes needed — .join-links is an unbounded grid that stacks rows automatically.

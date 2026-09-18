@@ -8,6 +8,8 @@ export const site = {
     "https://docs.google.com/forms/d/e/1FAIpQLScUINiiG82aLoLGDPoFYIuQBFsOPn4rWHA4WUgTixA8x6ONIg/viewform",
   applicationUrl:
     "https://docs.google.com/forms/d/e/1FAIpQLSeCq-6WLcnU4H9A607sASLjyPEKrNtqBabeRMLeXrn1gNLM0A/viewform",
+  calendarUrl:
+    "https://calendar.google.com/calendar/u/1?cid=Y181ZjhiZmQ3YjVjOGNhY2UxYmE1NjhmOTEyM2EyZWJlNzIyMjg2YWY0MzBjOTM5NmEwNWE4ZTEwNGUzODgyZWZiQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20",
 };
 export const navigation = [
   { href: "/about", label: "About" },

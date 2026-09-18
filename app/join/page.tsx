@@ -72,6 +72,11 @@ export default function Join() {
             description="Help bring Latte Lab events and ideas to life."
             secondary
           />
+          <FormLink
+            href={site.calendarUrl}
+            label="Add events to your calendar"
+            description="Get pop-ups, workshops, and socials right on your calendar."
+          />
         </div>
         <div className="join-socials">
           <a href={site.instagram} target="_blank" rel="noopener noreferrer">
