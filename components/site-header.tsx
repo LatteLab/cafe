@@ -49,7 +49,7 @@ export function SiteHeader() {
         ))}
         <Link
           href="/join"
-          className="button button-small"
+          className="button button-small nav-join"
           aria-current={pathname === "/join" ? "page" : undefined}
           onClick={() => setOpen(false)}
         >

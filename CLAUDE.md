@@ -2,7 +2,7 @@
 
 # Latte Lab public website
 
-This repository is the public social club website, not the member portal in latte-lab-frontend.
+This repository is the public social club website, not the member portal in brewroom.
 Next.js 16 App Router, React 19, TypeScript, Tailwind 4. Node >=22.6; use npm and commit package-lock.json.
 
 ## Product direction
@@ -34,3 +34,7 @@ Vercel Web Analytics is installed via @vercel/analytics/next in the root layout.
 Vercel Speed Insights is installed via @vercel/speed-insights/next in the root layout. It requires project-side enablement; installing the package does not purchase a paid add-on.
 
 The approved social preview is app/opengraph-image.png (1200×630), with accessible description in opengraph-image.alt.txt. Next.js file metadata supplies the OG and Twitter image; do not override it with the old /opengraph-image route.
+
+## Homepage and Join
+
+Homepage uses Young Serif with scoped styles in app/landing.css. About stays at /about; the homepage introduction links there. MemoryMotion fans three Polaroids out on desktop with GSAP; smaller screens and reduced motion keep normal scrolling. Join uses the supplied member wax-seal sticker and includes LinkedIn. Footer invitation links directly to the membership mailing list.

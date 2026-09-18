@@ -9,6 +9,38 @@ export type ScrapbookEntry = {
 };
 export const entries: ScrapbookEntry[] = [
   {
+    id: "passionfruit-coldbrew-fall-2026",
+    caption: "Passionfruit lemonade cold brew",
+    collection: "First event of fall 2026",
+    category: "Drinks",
+    date: "Fall 2026",
+    alt: "A hand holding passionfruit lemonade cold brew in a clear Latte Lab cup, backlit against orange and turquoise",
+  },
+  {
+    id: "photoshoot-polaroids",
+    caption: "Latte Lab photoshoot shots",
+    collection: "Latte Lab photoshoot",
+    category: "Events",
+    date: "",
+    alt: "Three instant photos of Latte Lab members arranged on a wooden table beside a lamp and an amber glass",
+  },
+  {
+    id: "halloween-2025",
+    caption: "A little spooky, a lot of company",
+    collection: "Halloween 2025",
+    category: "Events",
+    date: "October 2025",
+    alt: "Seven friends posing together in costumes at Latte Lab’s Halloween 2025 event",
+  },
+  {
+    id: "halloween-filming-2025",
+    caption: "Halloween content filming",
+    collection: "Halloween 2025",
+    category: "Events",
+    date: "October 2025",
+    alt: "A person dressed as a ghost with sunglasses and a small pumpkin on their head, holding a ghost-decorated drink",
+  },
+  {
     id: "blueprint-6",
     caption: "Behind the coffee counter",
     collection: "Hack Blueprint",

@@ -132,7 +132,8 @@ export function ScrapbookGallery() {
                 {selected.caption}
               </h2>
               <p>
-                {selected.collection} · {selected.date}
+                {selected.collection}
+                {selected.date ? ` · ${selected.date}` : ""}
               </p>
             </div>
           </div>

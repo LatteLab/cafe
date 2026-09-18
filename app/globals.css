@@ -1785,3 +1785,19 @@ h1 em::after {
     transform: none !important;
   }
 }
+
+.join-member-seal { width: 100%; max-width: 480px; height: auto; justify-self: center; transform: rotate(-7deg); }
+@media (max-width: 760px) { .join-member-seal { width: 280px; max-width: 90%; } }
+
+/* Compact navigation action, distinct from the larger form buttons. */
+.navigation .nav-join {
+  border-radius: 7px;
+  min-height: 38px;
+  padding: 8px 16px;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.navigation .nav-join span[aria-hidden] { font-size: 16px; }
+.navigation .nav-join:hover { transform: none; box-shadow: none; background: #284936; }
+.join-socials { flex-wrap: wrap; }

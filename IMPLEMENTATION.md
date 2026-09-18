@@ -103,3 +103,35 @@ Use App Router / React 19 / TypeScript / Tailwind 4, npm lockfile, optimized loc
 ## Footer LinkedIn — 2026-09-18
 
 - Added the official LinkedIn company link beside Instagram and Email in the footer, opening in a new tab with an accessible notice.
+
+## Local landing page exploration
+
+- Branch: codex/landing-page-preview. Review locally only; do not push or deploy.
+- Young Serif homepage headlines, centered beaver poster, short introduction linking to the existing /about page, three real photo Polaroids.
+- Desktop memories use a short GSAP pin; mobile, short windows, and reduced motion show a normal static layout.
+- Existing signature footer preserved; invitation links directly to the membership mailing list.
+
+- Refined desktop memories into a centered photo stack that fans out over a short scroll pin; no pin on mobile or reduced motion.
+- Added user-supplied IMG_5870.JPG to Events as Halloween 2025, optimized to WebP without altering the original. Source: /Users/datct/Downloads/IMG_5870.JPG.
+
+- Added Halloween content filming photo from /Users/datct/Downloads/IMG_5847.JPG beside the Halloween group photo; optimized WebP with original orientation preserved.
+
+- Added Latte Lab photoshoot shots from /Users/datct/Downloads/IMG_5431.jpeg to the scrapbook Events collection. Date omitted because none was supplied. Original preserved; optimized WebP used for the site.
+
+- Added user-supplied IMG_9361.heic as passionfruit lemonade cold brew from the first event of fall 2026. Converted with macOS HEIC support and optimized to WebP; original unchanged. Replaced the landing page drink Polaroid with this photo.
+
+- Replaced the landing “better together” photo with user-supplied DC0A2311.jpg. Rotated upright and fitted the full group into the Polaroid; source original unchanged. Local preview only.
+
+- Swapped the landing “better together” image to 43900384_Unknown.JPG at the user’s request. Restored the standard full-bleed Polaroid crop for this landscape photo.
+
+- Updated the landing “around campus” Polaroid with user-supplied 43636592_Unknown.JPG, optimized as around-campus-blueprint.webp. Local preview only.
+
+- Replaced Join page CoffeeArt with the supplied wax_seal_sticker.png, optimized with transparency intact as member-wax-seal.webp. Local preview only.
+
+- Added LinkedIn to Join page social links. Replaced header Join pill with a compact, softly rounded rectangle and smaller arrow; retained form-button styling. Local preview only.
+
+- Simplified the second and third homepage headings to “About us” and “Brewing memories” to avoid repeating the coffee/company phrasing.
+
+## Approved release
+
+User approved merging all preview work to main without squashing and deploying. Removed the first-frame eyebrow. Final checks run before release; preserve the feature commit through a merge commit.
