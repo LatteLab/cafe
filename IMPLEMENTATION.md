@@ -95,3 +95,7 @@ Use App Router / React 19 / TypeScript / Tailwind 4, npm lockfile, optimized loc
 
 - Published the exact approved 1200×630 cream preview: original cup logo, Fraunces wordmark, and the selected MIT community description.
 - Replaced the old generated image with a static PNG and descriptive alt metadata; removed the obsolete explicit image URL so Next.js supplies the file URL.
+
+## Homepage title — 2026-09-18
+
+- Simplified the default page title to Latte Lab, which supplies the homepage browser tab, Open Graph title, and Twitter title. Interior page titles retain their existing template.

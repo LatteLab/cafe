@@ -14,7 +14,7 @@ import { site } from "@/content/site";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Latte Lab — Coffee & community at MIT",
+    default: "Latte Lab",
     template: "%s | Latte Lab",
   },
   description:
