@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { site } from "@/content/site";
 export const metadata: Metadata = {
-  title: "Join the club",
+  title: "Join",
   description:
     "Find your way into Latte Lab: club membership, team applications, Instagram, and contact details.",
   alternates: { canonical: "/join" },
