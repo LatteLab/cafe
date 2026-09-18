@@ -159,3 +159,5 @@ User approved merging all preview work to main without squashing and deploying. 
 - Renamed `passionfruit-coldbrew-fall-2026`'s collection text to “First semester event: Brew and Meet!” at user request (was “First event of fall 2026”).
 
 - About page ethos section: removed the "THERE'S A PLACE FOR YOU HERE" eyebrow and the "espresso machine" paragraph, and renamed the "Pull up a chair" button to "Get involved," per user request. Removed the now-dead `.ethos > p` CSS rules.
+
+- Added back a short ethos paragraph, "We'd love to have you at the next one! :)", under the "A good cup can make campus feel a little smaller." motto, after brainstorming language with the user. Restored the `.ethos > p` CSS rules for it.

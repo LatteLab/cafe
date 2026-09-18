@@ -88,6 +88,7 @@ export default function About() {
           <br />
           campus feel a little smaller.
         </h2>
+        <p>We&rsquo;d love to have you at the next one! :)</p>
         <div className="hero-actions">
           <Link className="button" href="/join">
             Get involved <span aria-hidden="true">↗</span>
