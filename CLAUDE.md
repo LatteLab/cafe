@@ -32,3 +32,5 @@ components/site-footer.tsx uses the original user-supplied sweater back.svg as p
 Vercel Web Analytics is installed via @vercel/analytics/next in the root layout. Dashboard enablement is managed in Vercel.
 
 Vercel Speed Insights is installed via @vercel/speed-insights/next in the root layout. It requires project-side enablement; installing the package does not purchase a paid add-on.
+
+The approved social preview is app/opengraph-image.png (1200×630), with accessible description in opengraph-image.alt.txt. Next.js file metadata supplies the OG and Twitter image; do not override it with the old /opengraph-image route.

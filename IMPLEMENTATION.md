@@ -90,3 +90,8 @@ Use App Router / React 19 / TypeScript / Tailwind 4, npm lockfile, optimized loc
 ## Speed Insights — 2026-09-18
 
 - Added the official Next.js Speed Insights component once in the root layout alongside Web Analytics. No paid plan or subscription changes.
+
+## Cream social preview — 2026-09-18
+
+- Published the exact approved 1200×630 cream preview: original cup logo, Fraunces wordmark, and the selected MIT community description.
+- Replaced the old generated image with a static PNG and descriptive alt metadata; removed the obsolete explicit image URL so Next.js supplies the file URL.
