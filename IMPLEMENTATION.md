@@ -86,3 +86,7 @@ Use App Router / React 19 / TypeScript / Tailwind 4, npm lockfile, optimized loc
 - Live SVG measured 5,752 bytes and ~0.23s for one request; not a broad performance benchmark. Removed deliberate 1.1s reveal and client observer/hydration dependency.
 - Original SVG paths are now inline in server-rendered HTML, eliminating the CSS-mask image fetch while retaining the automatic glow and reduced-motion fallback.
 - Installed official Vercel Analytics and added its Next.js component once in the root layout.
+
+## Speed Insights — 2026-09-18
+
+- Added the official Next.js Speed Insights component once in the root layout alongside Web Analytics. No paid plan or subscription changes.

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "@fontsource/fraunces/latin-600.css";
 import "@fontsource/fraunces/latin-700.css";
 import "@fontsource/dm-sans/latin-400.css";
@@ -42,6 +43,7 @@ export default function RootLayout({
         {children}
         <SiteFooter />
         <Analytics />
+        <SpeedInsights />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
