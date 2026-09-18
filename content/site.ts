@@ -25,4 +25,5 @@ export const team = [
   { name: "Jocelyn Paek", role: "Creative & Marketing Director", art: "seal" },
   { name: "Josh Nix", role: "Social & Recruitment Chair", art: "beaver-bean" },
   { name: "Alvin Chen", role: "Social & Recruitment Chair", art: "iced-latte" },
+  { name: "Terry Kim", role: "Founder & Coffee Scientist", art: "coffee-scientist" },
 ];
