@@ -145,3 +145,5 @@ User approved merging all preview work to main without squashing and deploying. 
 - Added a user-supplied pasted photo to scrapbook Events as “A pourover lesson with Korean Momma” (id `korean-momma-pourover`), optimized to WebP. No date assumed; whiteboard in the photo reads “Korean Momma x Latte Lab pourover event.”
 
 - Added a user-supplied pasted photo to scrapbook Events as “Brewing at the CSAIL R&D event” (id `csail-rd-event`), optimized to WebP. No date assumed; user identified it as a Latte Lab x CSAIL R&D event.
+
+- Removed two scrapbook entries at user request: `blueprint-1` (“A cup to keep you going,” Hack Blueprint) and `saas-5` (“One more look at that pour,” SAAS collaboration). Deleted their WebP files; kept their Drive provenance in content/asset-sources.json.

@@ -89,14 +89,6 @@ export const entries: ScrapbookEntry[] = [
     alt: "Members chatting around a table during a Latte Lab social",
   },
   {
-    id: "blueprint-1",
-    caption: "A cup to keep you going",
-    collection: "Hack Blueprint",
-    category: "Drinks",
-    date: "February 2026",
-    alt: "A hand holding a finished drink in front of the Blueprint chalkboard",
-  },
-  {
     id: "blueprint-4",
     caption: "Coffee break, campus edition",
     collection: "Hack Blueprint",
@@ -111,14 +103,6 @@ export const entries: ScrapbookEntry[] = [
     category: "Events",
     date: "October 2025",
     alt: "Preparing and sharing food around a table at a club social",
-  },
-  {
-    id: "saas-5",
-    caption: "One more look at that pour",
-    collection: "SAAS collaboration",
-    category: "Drinks",
-    date: "October 2025",
-    alt: "Overhead view of a latte with petals beside the cup",
   },
   {
     id: "saas-2",
