@@ -151,3 +151,9 @@ User approved merging all preview work to main without squashing and deploying. 
 - Added three user-supplied pasted photos to scrapbook Drinks, optimized to WebP: `halloween-ghost-2025` (ghost costume with a ghost-drawn iced coffee, October 2025), `salted-caramel-butter-pecan` (salted caramel cold foam butter pecan latte, seasonal menu, no date assumed), and `dubai-coffee-taste-test` (Dubai coffee taste test, no date assumed).
 
 - Added a fourth user-supplied pasted photo, `figma-spring-2026` (iced matcha with Latte Lab member sticker, Latte Lab x Figma, Spring 2026), to scrapbook Drinks, optimized to WebP. Sent directly after the earlier Messages-attachment path proved unreadable.
+
+- Reordered scrapbook entries per user request: `passionfruit-coldbrew-fall-2026`, `csail-rd-event`, `korean-momma-pourover`, `matching-sweaters`, `dubai-coffee-taste-test`, `photoshoot-polaroids` now lead the list, followed by `figma-spring-2026` and `halloween-ghost-2025`/`salted-caramel-butter-pecan`, then the rest unchanged.
+
+- Filled in every scrapbook entry's bottom-right date as a semester (Fall/Spring + year), per user request. Month dates converted mechanically (October 2025 → Fall 2025, February 2026 → Spring 2026). User supplied the semester for entries that had no date: `dubai-coffee-taste-test`, `csail-rd-event`, `korean-momma-pourover`, `matching-sweaters`, `photoshoot-polaroids` → Spring 2026; `salted-caramel-butter-pecan` → Fall 2025.
+
+- Renamed `passionfruit-coldbrew-fall-2026`'s collection text to “First semester event: Brew and Meet!” at user request (was “First event of fall 2026”).
