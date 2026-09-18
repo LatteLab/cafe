@@ -1801,3 +1801,5 @@ h1 em::after {
 .navigation .nav-join span[aria-hidden] { font-size: 16px; }
 .navigation .nav-join:hover { transform: none; box-shadow: none; background: #284936; }
 .join-socials { flex-wrap: wrap; }
+
+.join-content .join-heading { font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.15; margin: 0 0 32px; text-wrap: balance; }
