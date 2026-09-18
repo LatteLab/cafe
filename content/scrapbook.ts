@@ -9,6 +9,38 @@ export type ScrapbookEntry = {
 };
 export const entries: ScrapbookEntry[] = [
   {
+    id: "figma-spring-2026",
+    caption: "A matcha for Latte Lab x Figma",
+    collection: "Latte Lab x Figma",
+    category: "Drinks",
+    date: "Spring 2026",
+    alt: "An iced matcha latte with a Latte Lab member sticker on the cup, layered over a brown sauce at the bottom",
+  },
+  {
+    id: "halloween-ghost-2025",
+    caption: "A little ghost, a lot of coffee",
+    collection: "Halloween 2025",
+    category: "Drinks",
+    date: "October 2025",
+    alt: "A person in a white ghost costume holding an iced coffee with a hand-drawn ghost face on the cup",
+  },
+  {
+    id: "salted-caramel-butter-pecan",
+    caption: "Salted caramel cold foam butter pecan latte",
+    collection: "Seasonal drink menu",
+    category: "Drinks",
+    date: "",
+    alt: "An iced salted caramel cold foam butter pecan latte in a glass, surrounded by pumpkins and gourds",
+  },
+  {
+    id: "dubai-coffee-taste-test",
+    caption: "Dubai coffee taste test",
+    collection: "Dubai coffee taste test",
+    category: "Drinks",
+    date: "",
+    alt: "A latte with leaf-pattern latte art next to a Soil Roasters coffee bag and three chocolate-dusted treats on a wooden tray",
+  },
+  {
     id: "csail-rd-event",
     caption: "Brewing at the CSAIL R&D event",
     collection: "Latte Lab x CSAIL",

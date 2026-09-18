@@ -147,3 +147,7 @@ User approved merging all preview work to main without squashing and deploying. 
 - Added a user-supplied pasted photo to scrapbook Events as “Brewing at the CSAIL R&D event” (id `csail-rd-event`), optimized to WebP. No date assumed; user identified it as a Latte Lab x CSAIL R&D event.
 
 - Removed two scrapbook entries at user request: `blueprint-1` (“A cup to keep you going,” Hack Blueprint) and `saas-5` (“One more look at that pour,” SAAS collaboration). Deleted their WebP files; kept their Drive provenance in content/asset-sources.json.
+
+- Added three user-supplied pasted photos to scrapbook Drinks, optimized to WebP: `halloween-ghost-2025` (ghost costume with a ghost-drawn iced coffee, October 2025), `salted-caramel-butter-pecan` (salted caramel cold foam butter pecan latte, seasonal menu, no date assumed), and `dubai-coffee-taste-test` (Dubai coffee taste test, no date assumed).
+
+- Added a fourth user-supplied pasted photo, `figma-spring-2026` (iced matcha with Latte Lab member sticker, Latte Lab x Figma, Spring 2026), to scrapbook Drinks, optimized to WebP. Sent directly after the earlier Messages-attachment path proved unreadable.
