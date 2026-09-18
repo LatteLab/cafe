@@ -1681,36 +1681,6 @@ h1 em::after {
   color: #f8f1df;
   padding: 32px 0 22px;
 }
-.signature-invitation {
-  text-align: center;
-}
-.signature-invitation p {
-  font-family: "Caveat", cursive;
-  font-size: clamp(26px, 3vw, 34px);
-  margin-bottom: 5px;
-}
-.signature-invitation a {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
-  padding: 7px 3px;
-  border-bottom: 1px solid #f8f1df70;
-  transition:
-    color 180ms,
-    transform 180ms;
-}
-.signature-invitation a span {
-  transition: transform 180ms;
-}
-.signature-invitation a:hover,
-.signature-invitation a:focus-visible {
-  color: #e5b777;
-  transform: translateY(-2px);
-}
-.signature-invitation a:hover span {
-  transform: translate(2px, -2px);
-}
 .signature-art {
   width: min(100%, 950px);
   aspect-ratio: 737.52 / 213.81;
@@ -1803,3 +1773,8 @@ h1 em::after {
 .join-socials { flex-wrap: wrap; }
 
 .join-content .join-heading { font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.15; margin: 0 0 32px; text-wrap: balance; }
+
+.signature-footer { position: relative; }
+.signature-membership-link { position: absolute; inset: 0; z-index: 1; cursor: pointer; }
+.signature-footer .signature-membership-link:focus-visible { outline-offset: -7px; }
+.signature-meta a { position: relative; z-index: 2; }

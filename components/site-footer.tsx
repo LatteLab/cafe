@@ -5,17 +5,13 @@ export function SiteFooter() {
   return (
     <footer className="signature-footer">
       <div className="shell signature-inner">
-        <div className="signature-invitation">
-          <p>See you over coffee.</p>
-          <a
-            href={site.membershipUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Join the mailing list <span aria-hidden="true">↗</span>
-            <span className="sr-only"> (opens in a new tab)</span>
-          </a>
-        </div>
+        <a
+          className="signature-membership-link"
+          href={site.membershipUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Join the Latte Lab membership mailing list (opens in a new tab)"
+        />
         <div className="signature-art" role="img" aria-label="Latte Lab">
           <FooterWordmark />
         </div>
