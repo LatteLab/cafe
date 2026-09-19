@@ -175,3 +175,5 @@ User approved merging all preview work to main without squashing and deploying. 
 - Simplified /join buttons per user request: removed all description text under each button and made every button filled (dropped the `secondary`/outline style from "Apply to the club team"). Simplified the FormLink component's props accordingly (dropped `description`/`secondary`), removed the now-dead `.join-link > p` CSS rule, and moved the "Link coming soon" fallback text inline into the button (still only used if a URL is ever unset).
 
 - Changed the /join heading to "Find your way into Latte Lab!" (period → exclamation point) at user request.
+
+- Rewrote the three /join button labels at user request: "Join the membership mailing list :DD", "Apply to Latte Lab Internal Team!!!", "Add Latte Lab Events to your GCal!!".

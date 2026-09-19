@@ -39,9 +39,9 @@ export default function Join() {
       <section className="join-content">
         <h1 className="join-heading">Find your way into Latte Lab!</h1>
         <div className="join-links">
-          <FormLink href={site.membershipUrl} label="Join the membership mailing list" />
-          <FormLink href={site.applicationUrl} label="Apply to the club team" />
-          <FormLink href={site.calendarUrl} label="Add events to your calendar" />
+          <FormLink href={site.membershipUrl} label="Join the membership mailing list :DD" />
+          <FormLink href={site.applicationUrl} label="Apply to Latte Lab Internal Team!!!" />
+          <FormLink href={site.calendarUrl} label="Add Latte Lab Events to your GCal!!" />
         </div>
         <div className="join-socials">
           <a href={site.instagram} target="_blank" rel="noopener noreferrer">
