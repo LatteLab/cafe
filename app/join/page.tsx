@@ -11,12 +11,17 @@ function FormLink({ href, label }: { href: string | null; label: string }) {
   return (
     <div className="join-link">
       {href ? (
-        <a className="button" href={href} target="_blank" rel="noopener noreferrer">
+        <a
+          className="button button-outline"
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {label} <span aria-hidden="true">↗</span>
           <span className="sr-only"> (opens in a new tab)</span>
         </a>
       ) : (
-        <button className="button" disabled>
+        <button className="button button-outline" disabled>
           {label} <span aria-hidden="true">↗</span>
           <span className="coming-soon"> Link coming soon</span>
         </button>

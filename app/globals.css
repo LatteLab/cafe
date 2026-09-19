@@ -795,6 +795,10 @@ h1 em::after {
   width: 100%;
   justify-content: space-between;
 }
+.join-link .button-outline:hover:not(:disabled) {
+  background: var(--green);
+  color: var(--paper);
+}
 .join-link button:disabled {
   opacity: 0.83;
 }
@@ -802,7 +806,7 @@ h1 em::after {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: #d6d8c7;
+  color: var(--muted);
 }
 .join-socials {
   display: flex;

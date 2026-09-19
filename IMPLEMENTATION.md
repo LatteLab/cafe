@@ -177,3 +177,5 @@ User approved merging all preview work to main without squashing and deploying. 
 - Changed the /join heading to "Find your way into Latte Lab!" (period → exclamation point) at user request.
 
 - Rewrote the three /join button labels at user request: "Join the membership mailing list :DD", "Apply to Latte Lab Internal Team!!!", "Add Latte Lab Events to your GCal!!".
+
+- Made all three /join buttons hollow by default (button-outline) with a green fill + cream text on hover, per user request. Scoped the hover-fill rule to `.join-link .button-outline` so the scrapbook "load more" button's existing sage-hover style is untouched. Adjusted `.coming-soon`'s color to `var(--muted)` since it's now shown against a hollow/transparent button instead of a filled dark one.
