@@ -9,6 +9,14 @@ export type ScrapbookEntry = {
 };
 export const entries: ScrapbookEntry[] = [
   {
+    id: "apron-pour-fall-2026",
+    caption: "Fall 2026",
+    collection: "",
+    category: "Drinks",
+    date: "Fall 2026",
+    alt: "A person wearing a Latte Lab apron pouring coffee into a glass",
+  },
+  {
     id: "passionfruit-coldbrew-fall-2026",
     caption: "Passionfruit lemonade cold brew",
     collection: "First semester event: Brew and Meet!",

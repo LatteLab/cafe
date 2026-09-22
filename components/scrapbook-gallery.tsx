@@ -82,7 +82,7 @@ export function ScrapbookGallery() {
               </span>
             </button>
             <div className="scrap-meta">
-              <span>{entry.collection}</span>
+              {entry.collection && <span>{entry.collection}</span>}
               <span>{entry.date}</span>
             </div>
           </article>
@@ -130,10 +130,12 @@ export function ScrapbookGallery() {
               <h2 id="photo-title" className="handwritten">
                 {selected.caption}
               </h2>
-              <p>
-                {selected.collection}
-                {selected.date ? ` · ${selected.date}` : ""}
-              </p>
+              {selected.collection && (
+                <p>
+                  {selected.collection}
+                  {selected.date ? ` · ${selected.date}` : ""}
+                </p>
+              )}
             </div>
           </div>
         </dialog>
