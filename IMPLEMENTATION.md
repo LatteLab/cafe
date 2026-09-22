@@ -185,3 +185,5 @@ User approved merging all preview work to main without squashing and deploying. 
 - Added user-supplied IMG_9206.JPG as the first scrapbook entry, optimized to WebP with EXIF orientation applied. Visible text is only “Fall 2026”; descriptive alt text remains available to screen readers.
 
 - 2026-09-21: Removed the four repetitive final scrapbook entries shown by the user: blueprint-7, social-1, social-6, and saas-3.
+
+- 2026-09-21: Added user-supplied IMG_9177.JPG as shared-cup-fall-2026.webp with only “Fall 2026” visible in the scrapbook and photo viewer.
