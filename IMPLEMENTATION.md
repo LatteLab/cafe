@@ -187,3 +187,9 @@ User approved merging all preview work to main without squashing and deploying. 
 - 2026-09-21: Removed the four repetitive final scrapbook entries shown by the user: blueprint-7, social-1, social-6, and saas-3.
 
 - 2026-09-21: Added user-supplied IMG_9177.JPG as shared-cup-fall-2026.webp with only “Fall 2026” visible in the scrapbook and photo viewer.
+
+## Rainbow form redirect — 2026-11-10
+
+- Added /rainbow as a temporary redirect directly to the public Google Form for “Taste the Rainbow: Moonwake Edition,” verified by resolving the supplied TinyURL and reading the form title.
+- Kept the existing /contact redirect intact.
+- Tests, lint, typecheck, and webpack production build passed. Verified the running production build returns 307 with the direct Google Form destination, /contact still returns 308 to /join, and /join returns 200.
