@@ -1,9 +1,12 @@
 @AGENTS.md
 
-# Latte Lab public website
+# Historical Cafe repository
 
-This repository is the public social club website, not the member portal in brewroom.
-Next.js 16 App Router, React 19, TypeScript, Tailwind 4. Node >=22.6; use npm and commit package-lock.json.
+The active public website lives in [LatteLab/brewroom](https://github.com/LatteLab/brewroom/tree/main/apps/cafe), under `apps/cafe`. The member portal lives in `apps/portal` in the same repository. Locally, use `../brewroom` and read its root and app instructions.
+
+Both Vercel projects deploy from Brewroom. A push to Brewroom `main` triggers production deployments; a push here does not. Use [Brewroom's deployment guide](https://github.com/LatteLab/brewroom/blob/main/docs/deployment.md) for releases.
+
+The guidance below describes this historical snapshot. Preserve unpublished local work and move only the requested changes into the active app. The old snapshot uses Next.js 16, React 19, TypeScript, Tailwind 4, and npm; the active workspace uses pnpm.
 
 ## Product direction
 
@@ -23,7 +26,7 @@ Keep the homepage short. Warm cream, forest green, espresso typography, original
 
 ## Verification and release
 
-Run npm test, npm run lint, npm run typecheck, npm run build. Check mobile navigation, gallery filters/load-more/dialog, and page widths in a browser. The user approved production deployment on September 16, 2026 after local preview. AWS apex DNS was previously pointed at CloudFront and must be separately verified before any domain cutover.
+For the active website, follow Brewroom's current verification and deployment instructions. Earlier approvals and DNS observations in this repository are historical records. For work explicitly targeting this snapshot, run npm test, npm run lint, npm run typecheck, and npm run build.
 
 ## Signature footer
 

@@ -1,5 +1,7 @@
 # Agent guidance
 
+- This is the historical standalone Cafe repository. Make public website changes in `LatteLab/brewroom`, under `apps/cafe`; the local checkout is `../brewroom/apps/cafe`.
+- Both Vercel projects deploy from `LatteLab/brewroom`. Pushing this repository does not update the live website. Read Brewroom's root and app guidance and `docs/deployment.md` before a release.
 - Read `CLAUDE.md` for project context before making changes.
 - Keep the experience clean, welcoming, and consistent with Latte Lab’s identity.
 - Make focused changes and preserve unrelated work.

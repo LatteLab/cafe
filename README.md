@@ -1,12 +1,12 @@
-# cafe
+# Cafe historical source
 
-Latte Lab’s public website — the front door to MIT’s student-run coffee community. Discover the club, meet the team, browse memories, and find out how to join.
+The active public website has moved to [LatteLab/brewroom, under apps/cafe](https://github.com/LatteLab/brewroom/tree/main/apps/cafe). The member portal lives in `apps/portal` in the same repository.
 
-**Why cafe?** It’s where people discover Latte Lab and get a feel for the community. Our companion repository, [brewroom](https://github.com/LatteLab/brewroom), houses the member app and internal tools: where things get made.
+Both Vercel projects deploy from `LatteLab/brewroom`. Pushing this repository does not update [lattelab.org](https://lattelab.org). Use [Brewroom's setup guide](https://github.com/LatteLab/brewroom#readme) and [deployment guide](https://github.com/LatteLab/brewroom/blob/main/docs/deployment.md).
 
-Visit [lattelab.org](https://www.lattelab.org). Built with Next.js 16, React 19, TypeScript, and locally hosted fonts and images.
+Keep this repository for history and unpublished local work. The instructions below apply to this snapshot; active development uses Brewroom's pnpm workspace.
 
-## Run locally
+## Run the historical snapshot locally
 
 Requires Node.js 22.6 or newer.
 
